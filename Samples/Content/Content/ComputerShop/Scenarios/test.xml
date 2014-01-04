@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Scenario>
+  
+  <Players>
+    <Player name="Mudy"/>
+    <Player name="Cesco"/>
+  </Players>
+  
+  <Resources>
+    <Resource name="Integrity" kind="resource"/>
+    <Resource name="WillingnessToBuy" kind="resource"/>
+    <Resource name="Categorized" kind="resource"/>
+    <Resource name="Accounting" kind="attack"/>
+    <Resource name="Sales" kind="attack"/>
+    <Resource name="Repair" kind="attack"/>
+    <Resource name="Happiness" kind="defence"/>
+    <Resource name="Stress" kind="defence"/>
+    <Resource name="Toulet" kind="defence"/>
+    <Resource name="Fatigue" kind="defence"/>    
+  </Resources> 
+
+  <ImmovableObjects> 
+    
+    <Object name="Console" dimension_x="3.0" dimension_y="3.0" image_path="console.png">      
+      <DefaultValues>
+        <Value name="Fatigue" >100.0</Value>
+        <Value name="Integrity">100.0</Value>
+      </DefaultValues>
+    </Object>   
+    
+    <Object name="Cash Machine" dimension_x="2.0" dimension_y="2.0" image_path="cash_machine.png">      
+      <DefaultValues>
+        <Value name="Fatigue" >100.0</Value>
+        <Value name="Integrity">100.0</Value>
+      </DefaultValues>
+    </Object>    
+      
+    <Object name="Broken PC" dimension_x="2.0" dimension_y="2.0" image_path="broken_pc.png">      
+      <DefaultValues>
+        <Value name="Fatigue" >50.0</Value>
+        <Value name="Integrity">50.0</Value>
+      </DefaultValues>
+    </Object>    
+    
+    <Object name="PC" dimension_x="2.0" dimension_y="2.0" image_path="computer.png">      
+      <DefaultValues>
+        <Value name="Fatigue" >100.0</Value>
+        <Value name="Integrity">100.0</Value>
+      </DefaultValues>
+    </Object>    
+    
+    <Object name="Picture" dimension_x="2.5" dimension_y="2.5" image_path="poster.png">      
+      <DefaultValues>
+        <Value name="Happiness">100.0</Value>
+        <Value name="Fatigue" >100.0</Value>
+        <Value name="Integrity">100.0</Value>
+      </DefaultValues>
+      <!--DEFAULT CONTINUOIS PROXY DEFAULT RANGE HOLE ROOM-->
+      <!--<Given>
+        <Value from="Integrity" to="Happiness">0.01</Value>
+      </Given>-->
+      
+      <AvailableProxies>        
+        <Proxie name="Watch" hasThreshold="false" distMax="3.0" source="immovable" target="movable,source">
+          <Given>
+            <Value from="Happiness" to="Stress">0.1</Value>
+            <Value from="Happiness" to="Fatigue">0.1</Value>
+          </Given>
+        </Proxie>
+        
+      </AvailableProxies>
+    </Object>    
+    <Object name="Chair" dimension_x="1.0" dimension_y="2.0" image_path="chair.png">
+      <DefaultValues>
+        <Value name="Fatigue">100.0</Value>
+        <Value name="Integrity">100.0</Value>
+      </DefaultValues>      
+      <AvailableProxies>
+        
+        <!--ACTION PROXY ARE NOT SUPPORTED-->
+        <Proxie name="Sit Down" hasThreshold="false" distMax="0.1" source="immovable" target="movable,source"> <!--source xor any-->
+          <Given>
+            <Value from="Integrity" to="Stress">0.1</Value>
+            <Value from="Integrity" to="Fatigue">0.1</Value>
+          </Given>
+        </Proxie>
+        
+        <ResourcesProxy name="Break" distMax="0.1" source="movable" target="immovable">
+          <Threshold>
+            <Value name="Repair">1.0</Value>
+          </Threshold>
+          <ResourcesToSend>
+            <Value name="Integrity">-1.0</Value>
+          </ResourcesToSend>
+          <Taken>
+            <Value from="Fatigue" to="Fatigue">-0.1</Value>
+            <Value from="Stress" to="Stress">-0.1</Value>
+          </Taken>
+          <Given>
+            <Value from="Fatigue" to="Repair">0.1</Value>
+            <Value from="Stress" to="Repair">0.1</Value>
+          </Given>
+        </ResourcesProxy>
+        <ResourcesProxy name="Repair" distMax="0.1" source="movable" target="immovable">
+          <Threshold>
+            <Value name="Repair">1.0</Value>
+            <Value name="Repair">1.0</Value>
+          </Threshold>
+          <ResourcesToSend>
+            <Value name="Integrity">1.0</Value>
+          </ResourcesToSend>
+          <Taken>
+            <Value from="Fatigue" to="Fatigue">-0.1</Value>
+            <Value from="Stress" to="Stress">-0.1</Value>
+          </Taken>
+          <Given>
+            <Value from="Fatigue" to="Repair">0.1</Value>
+            <Value from="Stress" to="Repair">0.1</Value>
+          </Given>
+        </ResourcesProxy>
+      </AvailableProxies>
+    </Object>    
+  </ImmovableObjects>  
+  
+  <Building>
+    <Rooms>
+      <Room dim_x="20.0" dim_y="20.0" position_x="0.0" position_y="0.0" image_path="office.png">
+        <Items>
+          <Item name="Picture" position_x="8.5" position_y="-7.0" hasOwner="false"/>
+          <Item name="Console" position_x="7.5" position_y="7.5" hasOwner="false"/>
+          
+          <Item name="Cash Machine" position_x="0.0" position_y="-6.0" hasOwner="false"/>
+          
+          <Item name="PC" position_x="0.0" position_y="0.0" hasOwner="false"/>
+          <Item name="PC" position_x="0.0" position_y="2.0" hasOwner="false"/>
+          <Item name="PC" position_x="0.0" position_y="4.0" hasOwner="false"/>
+          <Item name="PC" position_x="0.0" position_y="6.0" hasOwner="false"/>
+          <Item name="PC" position_x="0.0" position_y="8.0" hasOwner="false"/>
+          
+          <Item name="Broken PC" position_x="-9.0" position_y="-4.0" hasOwner="false"/>
+          <Item name="Broken PC" position_x="-9.0" position_y="-2.0" hasOwner="false"/>
+          <Item name="Broken PC" position_x="-9.0" position_y="0.0" hasOwner="false"/>
+          <Item name="Broken PC" position_x="-9.0" position_y="2.0" hasOwner="false"/>
+          <Item name="Broken PC" position_x="-9.0" position_y="4.0" hasOwner="false"/>
+        </Items>
+        
+        <People> 
+          <Person name="Mario" owner="Mudy" position_x="-2.0" position_y="-5.0" dim_x="2.0" dim_y="2.0" image_path="seller.png" max_speed_over_second="1.0"/>
+          <Person name="Marco" owner="Mudy" position_x="-6.0" position_y="-5.0" dim_x="2.0" dim_y="2.0" image_path="repair_man.png" max_speed_over_second="1.0"/>
+        </People>
+      </Room>
+    </Rooms>
+  </Building>
+  
+</Scenario>

@@ -1,0 +1,13 @@
+.svn
+Samples/**/bin/Debug/*
+Samples/**/obj/Debug/*
+Samples/**/*Game.*
+Samples/**/*_Functions.dll
+CasanovaBinaries/casanova-flow-2.fs
+*.csproj.user
+*.v11.suo
+Samples/FlowCompiler/Parser.cs.old
+Samples/FlowCompiler/Scanner.cs.old
+Desktop.ini
+Thumbs.db
+ehthumbs.db

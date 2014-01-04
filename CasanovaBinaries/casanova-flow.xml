@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Flow>
+  <Comment
+    Designer.Text="Comment"
+    Designer.OffsetX="169"
+    Designer.OffsetY="74.04" />
+  <Comment
+    Designer.Text="Cube : float32&lt;rad/s&gt;"
+    Designer.OffsetX="35"
+    Designer.OffsetY="129.04" />
+  <Comment
+    Designer.Text="Camera : float32&lt;rad/s&gt;"
+    Designer.OffsetX="73"
+    Designer.OffsetY="175.04" />
+  <Comment
+    Designer.Text="main"
+    Designer.OffsetX="948"
+    Designer.OffsetY="310.04" />
+  <Comment
+    Designer.Text="input"
+    Designer.OffsetX="1101"
+    Designer.OffsetY="313.04" />
+  <Comment
+    Designer.Text="world"
+    Designer.OffsetX="784"
+    Designer.OffsetY="306.04" />
+  <Comment
+    Designer.Text="Comment"
+    Designer.OffsetX="849"
+    Designer.OffsetY="422.04" />
+</Flow>

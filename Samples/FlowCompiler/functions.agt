@@ -1,0 +1,286 @@
+using System.Collections;
+using System.Collections.Generic;
+
+COMPILER C
+
+	public List<IDeclaration> dependecies = new List<IDeclaration>();
+
+	public interface IDeclaration
+	{
+		
+	};
+
+	public enum LiteralKind
+	{
+		Uknown,
+		Float,
+		Integer,
+		String,
+		Char
+	}
+
+	public class LiteralDeclaration : IDeclaration
+	{
+		public LiteralKind Kind { get; set; }
+		public string Value { get; set; }
+		public string Unit { get; set; }
+
+		public override string ToString()
+		{
+			if( Unit != null )
+			{
+				return Value + "<" + Unit + ">";
+			}
+			else
+			{
+				return Value;
+			}
+		}
+	};
+
+	public class MultiplyDeclaration : IDeclaration
+	{
+		public string Operator { get; set; }
+		public IDeclaration A { get; set; }
+		public IDeclaration B { get; set; }
+
+		public override string ToString()
+		{
+			return " ( " + A.ToString() + " " + Operator +  " " + B.ToString() + " ) ";
+		}
+	} 
+
+	public class MethodDeclaration : IDeclaration
+	{
+		public string Value { get; set; }
+		public MethodDeclaration Namespace { get; set; }
+		public MethodDeclaration Generic { get; set; }
+		public bool IsMethod { get; set; }
+
+
+		public override string ToString()
+		{
+			string prefix = Namespace == null ? string.Empty : Namespace.ToString() + ".";
+
+			string inner = string.Empty;
+			if( Arguments != null )
+			{
+				foreach( IDeclaration decl in Arguments ) {
+					inner += decl.ToString();
+					inner += ", ";
+				}
+
+				if( inner.EndsWith(", ") )
+				{
+					inner = inner.Substring(0, inner.Length - 2);
+				}
+			}
+			
+			
+
+			if( Generic != null )
+			{
+				if( IsMethod )
+				{
+					return prefix + Value + "<" + Generic.ToString() + ">" + "(" + inner + ")";
+				}
+				else
+				{
+					return prefix + Value + "<" + Generic.ToString() + ">";
+				}
+			}
+			else
+			{
+				if( IsMethod )
+				{
+					return prefix + Value + "(" + inner + ")";
+				}
+				else
+				{
+					return prefix + Value;
+				}
+			}			
+		}
+
+
+		public IDeclaration[] Arguments { get; set; }
+		public MethodDeclaration() { Value = string.Empty; }
+	};
+
+CHARACTERS
+	tab                = '\u0009'. /*  9 = tabulator */
+	eol                = '\u000a'. /* 10 = line feed */
+	lf				   = '\n'.	
+	cr                 = '\u000d'. /* 13 = carriage return */
+	newLine            = cr + eol. /* Line separator character (U+2028) + Paragraph separator character (U+2029) */
+	notNewLine = ANY - newLine .
+
+	letter     = 'A'..'Z' + 'a'..'z' + '_'.
+	oct        = '0'..'7'.
+	digit      = '0'..'9'.
+	nzdigit    = '1'..'9'.
+	hexDigit   = digit + "ABCDEFabcdef".
+	notQuote   = ANY - '"' - "\r\n".
+	notApo     = ANY - '\'' - "\r\n".
+	notDigit   = ANY - digit.
+
+	char               = ANY - "'" - '\\' - newLine.
+	verbatimStringChar = ANY - '"'.
+	regularStringChar  = ANY - '"' - '\\' - newLine.
+	
+	
+	ws         = " " + tab + '\u000b' + '\u000c'.
+
+TOKENS
+	ident    = letter {letter | digit}.
+	intCon	 = ( digit {digit} | digit {digit} CONTEXT ("." notDigit)
+			 | ("0x" | "0X") hexDigit {hexDigit} )
+			   ["U" | "u" | "L" | "l" | "UL" | "Ul" | "uL" | "ul" | "LU" | "Lu" | "lU" | "lu"] .
+
+	realCon = "." digit {digit} 
+			  [("e" | "E") ["+" | "-"] digit {digit}] 
+			  ["F" | "f" | "D" | "d" | "M" | "m"]
+			| digit {digit} 
+			  ( "." digit {digit} 
+			  [("e" | "E" ) ["+" | "-"] digit {digit} ] 
+			  ["F" | "f" | "D" | "d" | "M" | "m"]
+			| ("e" | "E") ["+" | "-"] digit {digit}
+ 			  ["F" | "f" | "D" | "d" | "M" | "m"]
+			| "F" | "f" | "D" | "d" | "M" | "m").
+  /*--------------------------------------------------------------------------------*/
+	charCon =
+		"'" (	char
+				| "\\\'" | "\\\"" | "\\\\" | "\\0" | "\\a" | "\\b" | "\\f" | "\\n" | "\\r" | "\\t" | "\\v"
+				| "\\x" hexDigit [hexDigit] [hexDigit] [hexDigit]
+				| "\\u" hexDigit hexDigit hexDigit hexDigit
+				| "\\U" hexDigit hexDigit hexDigit hexDigit hexDigit hexDigit hexDigit hexDigit
+				) 
+		"'".
+  /*--------------------------------------------------------------------------------*/
+	stringCon =
+		"\""	{ regularStringChar
+					| "\\\'" | "\\\"" | "\\\\" | "\\0" | "\\a" | "\\b" | "\\f" | "\\n" | "\\r" | "\\t" | "\\v"
+					| "\\x" hexDigit [hexDigit] [hexDigit] [hexDigit]
+					| "\\u" hexDigit hexDigit hexDigit hexDigit
+					| "\\U" hexDigit hexDigit hexDigit hexDigit hexDigit hexDigit hexDigit hexDigit
+					} 
+		"\""
+	| "@\"" {verbatimStringChar | "\"\""} "\"".
+
+
+
+
+COMMENTS FROM "/*" TO "*/"
+COMMENTS FROM "//" TO lf
+
+IGNORE tab + cr + lf
+
+PRODUCTIONS
+
+//---------- Compilation Unit ----------
+
+C = 
+	(. IDeclaration decl = null; .)
+	expression<out decl>
+	(. dependecies.Add(decl); .)
+	.
+    
+template<out MethodDeclaration decl>   =
+		   (. decl = new MethodDeclaration(); decl.Value += la.val; .) ident 
+		   [ '<' (. MethodDeclaration decl2 = null;  .) template<out decl2> (. decl.Generic = decl2; .) '>' ]
+		   .
+
+unit<LiteralDeclaration decl>	   = 
+		   '<' (. decl.Unit = la.val; MethodDeclaration decl2 = null; .) template<out decl2> '>'
+		   .
+
+arguments<MethodDeclaration decl>  = 
+		   (. IDeclaration decl1 = null; List<IDeclaration> expressions = new List<IDeclaration>(); .)
+		   expression<out decl1> (. expressions.Add(decl1); .)  { ',' expression<out decl1> (. expressions.Add(decl1); .)  }
+		   (. decl.Arguments = expressions.ToArray(); .)
+		   .
+
+functionCall<out MethodDeclaration decl> =			
+			 (. MethodDeclaration decl1 = null, decl2 = null; .)
+			 template<out decl1>  { '.' template<out decl2>  (.  decl2.Namespace = decl1; decl1 = decl2; .)  } 
+			 (.  decl = decl1; .)			 			 			 			 
+			 [ '(' [arguments<decl>] ')' (. decl.IsMethod = true;  .) ] 
+			.
+
+literal<out IDeclaration exprs> =
+		   (. exprs = null; .)
+		   (			
+			   (. LiteralDeclaration decl = new LiteralDeclaration(); decl.Value = la.val;  .) 
+			   realCon [ unit<decl> ] 
+			   (. decl.Kind = LiteralKind.Float; .)
+			   (. exprs = decl; .)
+		   |  
+			   (. LiteralDeclaration decl = new LiteralDeclaration(); decl.Value = la.val;  .) 
+			   intCon [ unit<decl> ] 
+			   (. decl.Kind = LiteralKind.Integer; .)
+			   (. exprs = decl; .)
+		   |
+			   //Create a string constant
+			   (. LiteralDeclaration decl = new LiteralDeclaration(); decl.Value = la.val;  .) 
+			   charCon 
+			   (. decl.Kind = LiteralKind.Char; .)
+			   (. exprs = decl; .)
+		   | 		   
+			   //Create a string constant
+			   (. LiteralDeclaration decl = new LiteralDeclaration(); decl.Value = la.val;  .) 
+			   stringCon 
+			   (. decl.Kind = LiteralKind.String; .)
+			   (. exprs = decl; .)
+		   )
+		   .
+
+unaryExpr<out IDeclaration exprs> =
+			[ "+" | "-" ] primary<out exprs>
+			.
+
+addExpr<out IDeclaration exprs> =
+			(. IDeclaration a = null, b = null; exprs = null; string op = string.Empty; .)
+			unaryExpr<out a> (. exprs = a; .)
+			{ (. op = la.val; .) ( "+" | "-" ) unaryExpr<out b> (. var c = new MultiplyDeclaration() { Operator = op, A = a, B = b }; a = c; .) }
+			(. exprs = a; .)
+			.
+
+multiplyExpr<out IDeclaration exprs> =
+			(. IDeclaration a = null, b = null; exprs = null; string op = string.Empty; .)
+			addExpr<out a> (. exprs = a; .) 
+			{ (. op = la.val; .) ( "*" | "/" | "%") addExpr<out b> (. var c = new MultiplyDeclaration() { Operator = op, A = a, B = b }; a = c; .) }
+			(. exprs = a; .)
+			.
+
+condExpr<out IDeclaration exprs> =
+			(. IDeclaration a = null, b = null; exprs = null; string op = string.Empty; .)
+			multiplyExpr<out a> (. exprs = a; .) 
+			{ (. op = la.val; .) ( "==" | "!=" | "<" | ">") multiplyExpr<out b> (. var c = new MultiplyDeclaration() { Operator = op, A = a, B = b }; a = c; .) }
+			(. exprs = a; .)
+			.
+
+primary<out IDeclaration exprs> = 
+			(. exprs = null; .)	
+			( literal<out exprs> | '(' expression<out exprs> ')' | method<out 	exprs> )
+			.
+
+method<out IDeclaration exprs> = 
+			(. MethodDeclaration decl = null; exprs = null; .)	
+			( functionCall<out decl>  )
+			(. exprs = decl; .)	
+			.
+
+expression<out IDeclaration exprs> = 
+		   (. exprs = null; .)
+		   (			
+				condExpr<out exprs> 
+		   |
+			    primary<out exprs>		   		   
+		   )
+
+
+//		   | literal  (. Console.WriteLine("literal detected"); .)  
+		   .
+
+
+END C.		

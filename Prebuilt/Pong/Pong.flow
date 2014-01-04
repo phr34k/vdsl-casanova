@@ -1,0 +1,1870 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Flow
+  Namespace="Pong">
+  <Comment
+    Designer.Text="  /// The sprite position is taken directly from the physics.&#xD;&#xA;  static member SpritePosition'(self:Wall,dt:float32&lt;s&gt;) = &#xD;&#xA;    self.Box.Position"
+    Designer.OffsetX="568.95659452788"
+    Designer.OffsetY="1727.22287243533" />
+  <Comment
+    Designer.Text="Sprite.Create(&#xD;&#xA;                    args.DefaultLayer,&#xD;&#xA;                    Vector2&lt;pixel&gt;.Zero,&#xD;&#xA;                    Vector2&lt;pixel&gt;(50.0f * 2.2f&lt;pixel&gt;, 50.0f * 2.2f&lt;pixel&gt;),&#xD;&#xA;                    @&quot;BouncingBalls\ball&quot;)"
+    Designer.OffsetX="3139.29886455906"
+    Designer.OffsetY="1930.19253478584" />
+  <Comment
+    Designer.Text="physics.CreateBall(0.0f&lt;m&gt;, 0.0f&lt;m&gt;, 50.0f&lt;m&gt;, 1.0f&lt;kg&gt;, 1.0f, 0.0f, true)"
+    Designer.OffsetX="3089.37247660669"
+    Designer.OffsetY="2075.68154365587" />
+  <Node
+    Id="590EEB4"
+    Type="Loaded"
+    Designer.Name="590eeb4"
+    Designer.OffsetX="1699.90752078966"
+    Designer.OffsetY="1016.5345855208">
+    <Property
+      Name="Arguments"
+      Type="object" />
+  </Node>
+  <Node
+    Id="6464D71"
+    Type="KeyDown"
+    Designer.Name="6464d71"
+    Key="F9"
+    Designer.OffsetX="2510.78031871916"
+    Designer.OffsetY="2109.81382286914">
+    <Property
+      Name="Object"
+      Type="object" />
+    <Property
+      Name="Key"
+      Type="TypeKeyPressed" />
+  </Node>
+  <Node
+    Id="72E6794"
+    Type="FunctionCall"
+    Designer.Name="72e6794"
+    Object="Save"
+    Designer.OffsetX="2749.78031871916"
+    Designer.OffsetY="2108.81382286914">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="7A5E5E4"
+    Type="FunctionCall"
+    Designer.Name="7a5e5e4"
+    Object="Load"
+    Designer.OffsetX="2751.78031871916"
+    Designer.OffsetY="2241.81382286914">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="12F73E33"
+    Type="Thread"
+    Designer.Name="12f73e33"
+    Priority="Input"
+    Designer.OffsetX="1973.63937313486"
+    Designer.OffsetY="2461.50963018404">
+    <Property
+      Name="Arguments"
+      Type="object" />
+    <Property
+      Name="Priority"
+      Type="ThreadPriority" />
+  </Node>
+  <Node
+    Id="238CACC0"
+    Type="KeyDown"
+    Designer.Name="238cacc0"
+    Key="Escape"
+    Designer.OffsetX="2518.78031871916"
+    Designer.OffsetY="2357.81382286914">
+    <Property
+      Name="Object"
+      Type="object" />
+    <Property
+      Name="Key"
+      Type="TypeKeyPressed" />
+  </Node>
+  <Node
+    Id="241D36D9"
+    Type="FunctionCall"
+    Designer.Name="241d36d9"
+    Object="Quit"
+    Designer.OffsetX="2751.78031871916"
+    Designer.OffsetY="2358.81382286914">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="30E5064A"
+    Type="FunctionParam"
+    Designer.Name="30e5064a"
+    Object="start_selector"
+    Designer.OffsetX="2969.70028987994"
+    Designer.OffsetY="2344.81382286914">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="311F3210"
+    Type="Thread"
+    Designer.Name="311f3210"
+    Priority="Main"
+    Designer.OffsetX="2129.94833162348"
+    Designer.OffsetY="1999.92354633033">
+    <Property
+      Name="Arguments"
+      Type="object" />
+    <Property
+      Name="Priority"
+      Type="ThreadPriority" />
+  </Node>
+  <Node
+    Id="384B1694"
+    Type="Yield"
+    Designer.Name="384b1694"
+    Designer.OffsetX="2406.92513804632"
+    Designer.OffsetY="2149.29464356495">
+    <Property
+      Name="Arguments"
+      Type="object" />
+  </Node>
+  <Node
+    Id="7C0156D"
+    Type="Entity"
+    Designer.Name="7c0156d"
+    Name="Ball"
+    Inherits="CasanovaEntity"
+    Designer.OffsetX="506.95659452788"
+    Designer.OffsetY="637.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="86F07A1"
+    Type="Variable"
+    Designer.Name="86f07a1"
+    Name="Circle"
+    Inherits="PhysicsEntity"
+    Designer.OffsetX="836.95659452788"
+    Designer.OffsetY="502.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="8D1FCDF"
+    Type="Variable"
+    Designer.Name="8d1fcdf"
+    Name="Sprite"
+    Inherits="Sprite"
+    Designer.OffsetX="876.95659452788"
+    Designer.OffsetY="605.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="9175877"
+    Type="Entity"
+    Designer.Name="9175877"
+    Name="Wall"
+    Inherits="CasanovaEntity"
+    Designer.OffsetX="518.95659452788"
+    Designer.OffsetY="1294.22287243533">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="9DEDAA8"
+    Type="Variable"
+    Designer.Name="9dedaa8"
+    Name="Box"
+    Inherits="PhysicsEntity"
+    Designer.OffsetX="784.95659452788"
+    Designer.OffsetY="1255.22287243533">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="A1B14BF"
+    Type="Variable"
+    Designer.Name="a1b14bf"
+    Name="Sprite"
+    Inherits="Sprite"
+    Designer.OffsetX="784.95659452788"
+    Designer.OffsetY="1360.22287243533">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="A899EB0"
+    Type="Entity"
+    Designer.Name="a899eb0"
+    Name="World"
+    Inherits="CasanovaWorld"
+    Designer.OffsetX="1088.95659452788"
+    Designer.OffsetY="860.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="B5F3591"
+    Type="Variable"
+    Designer.Name="b5f3591"
+    Name="Physics"
+    Inherits="PhysicsWorld"
+    Designer.OffsetX="1370.95659452788"
+    Designer.OffsetY="534.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="BF533A8"
+    Type="Variable"
+    Designer.Name="bf533a8"
+    Name="Ball"
+    Inherits="Ball"
+    Designer.OffsetX="1377.95659452788"
+    Designer.OffsetY="641.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="C286471"
+    Type="Variable"
+    Designer.Name="c286471"
+    Name="Ground"
+    Inherits="List&lt;Wall&gt;"
+    Designer.OffsetX="1387.65374805098"
+    Designer.OffsetY="869.880361936026">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="14E89FF1"
+    Type="Function"
+    Designer.Name="14e89ff1"
+    Name="SpritePosition'(self:Wall,dt:float32&lt;s&gt;)"
+    Code="self.Box.Position"
+    Designer.OffsetX="723.95659452788"
+    Designer.OffsetY="1640.22287243533">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Code"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1DBA08A4"
+    Type="Accessor"
+    Designer.Name="1dba08a4"
+    Name="Position"
+    Inherits="Circle.Position"
+    Designer.OffsetX="856.95659452788"
+    Designer.OffsetY="705.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="273359F4"
+    Type="Rule"
+    Designer.Name="273359f4"
+    Name="SpritePosition"
+    Inherits="Circle.Position"
+    Designer.OffsetX="861.95659452788"
+    Designer.OffsetY="811.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="27DABB82"
+    Type="Rule"
+    Designer.Name="27dabb82"
+    Name="SpriteRotation"
+    Inherits="Circle.Orientation"
+    Designer.OffsetX="805.95659452788"
+    Designer.OffsetY="912.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="A5360B0"
+    Type="Variable"
+    Designer.Name="a5360b0"
+    Name="ball"
+    Inherits="Ball"
+    Designer.OffsetX="2291.85038066866"
+    Designer.OffsetY="607.213575536158">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="AF7AA58"
+    Type="Data"
+    Designer.Name="af7aa58"
+    Name="Circle"
+    Inherits="physics.CreateBall(0.0f&lt;m&gt;, 0.0f&lt;m&gt;, 10.0f&lt;m&gt;, 1.0f&lt;kg&gt;, 1.0f, 0.1f, true)"
+    Designer.OffsetX="2811.27777819504"
+    Designer.OffsetY="508.371010085009">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="BF7C1CC"
+    Type="Data"
+    Designer.Name="bf7c1cc"
+    Name="Sprite"
+    Inherits="Sprite.Create(canvas, Vector2&lt;pixel&gt;.Zero, Vector2&lt;pixel&gt;(20.0f&lt;pixel&gt;, 20.0f&lt;pixel&gt;), @&quot;Pong\ball&quot;)"
+    Designer.OffsetX="2841.86546486811"
+    Designer.OffsetY="647.9510380406">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="A52FB77"
+    Type="Rule"
+    Designer.Name="a52fb77"
+    Name="SpritePosition"
+    Inherits="Box.Position"
+    Designer.OffsetX="789.909009812667"
+    Designer.OffsetY="1535.22287243533">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="ADFFC4D"
+    Type="KeyDown"
+    Designer.Name="adffc4d"
+    Key="F11"
+    Designer.OffsetX="2516.62530790445"
+    Designer.OffsetY="2236.81382286914">
+    <Property
+      Name="Object"
+      Type="object" />
+    <Property
+      Name="Key"
+      Type="TypeKeyPressed" />
+  </Node>
+  <Node
+    Id="B7AEA03"
+    Type="Variable"
+    Designer.Name="b7aea03"
+    Name="ground"
+    Inherits="Ground"
+    Designer.OffsetX="2418.37110238267"
+    Designer.OffsetY="837.050315328258">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="BAA24AB"
+    Type="Variable"
+    Designer.Name="baa24ab"
+    Name="world"
+    Inherits="World"
+    Designer.OffsetX="2210.67982419062"
+    Designer.OffsetY="1160.13129378366">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="C46D600"
+    Type="Variable"
+    Designer.Name="c46d600"
+    Name="ball2"
+    Inherits="Ball"
+    Designer.OffsetX="2389.36855142664"
+    Designer.OffsetY="419.579058670025">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="CE365D4"
+    Type="Data"
+    Designer.Name="ce365d4"
+    Name="Circle"
+    Inherits="physics.CreateBall(0.0f&lt;m&gt;, 0.0f&lt;m&gt;, 10.0f&lt;m&gt;, 1.0f&lt;kg&gt;, 1.0f, 0.1f, true)"
+    Designer.OffsetX="2689.02299462559"
+    Designer.OffsetY="403.638696950385">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="D2A1FB6"
+    Type="Data"
+    Designer.Name="d2a1fb6"
+    Name="Ball"
+    Inherits="ball"
+    Designer.OffsetX="2999.67244725501"
+    Designer.OffsetY="1475.02780690029">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="DF75DA4"
+    Type="Data"
+    Designer.Name="df75da4"
+    Name="Ground"
+    Inherits="[ ground; ceiling; left; right; paddle1; paddle2 ]"
+    Designer.OffsetX="2760.11758552441"
+    Designer.OffsetY="1420.57605955618">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="E0D80E4"
+    Type="Data"
+    Designer.Name="e0d80e4"
+    Name="Ball2"
+    Inherits="ball2"
+    Designer.OffsetX="3088.2171825612"
+    Designer.OffsetY="1388.65572810757">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="EB29ED9"
+    Type="Variable"
+    Designer.Name="eb29ed9"
+    Name="Ball2"
+    Inherits="Ball"
+    Designer.OffsetX="1383.97024509476"
+    Designer.OffsetY="756.923703046619">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="CC490C2"
+    Type="Data"
+    Designer.Name="cc490c2"
+    Name="Physics"
+    Inherits="physics"
+    Designer.OffsetX="2748.03101103315"
+    Designer.OffsetY="1540.176485281">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="CAAA370"
+    Type="Data"
+    Designer.Name="caaa370"
+    Name="Box"
+    Inherits="physics.CreateBox(0.0f&lt;m&gt;, 495.0f&lt;m&gt;, 500.0f&lt;m&gt;, 10.0f&lt;m&gt;, 0.0f&lt;kg&gt;, 0.0f, 0.0f, false)"
+    Designer.OffsetX="2744.64164656743"
+    Designer.OffsetY="798.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="D2A033B"
+    Type="Data"
+    Designer.Name="d2a033b"
+    Name="Sprite"
+    Inherits="Sprite.Create(canvas, Vector2&lt;pixel&gt;.Zero, Vector2&lt;pixel&gt;(1000.0f&lt;pixel&gt;, 10.0f&lt;pixel&gt;), 0.0f&lt;rad&gt;, Vector2&lt;pixel&gt;.Zero, @&quot;BouncingBalls\wall&quot;, Color.White, true)"
+    Designer.OffsetX="3075.76497990077"
+    Designer.OffsetY="758.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="CB699EA"
+    Type="Variable"
+    Designer.Name="cb699ea"
+    Name="ceiling"
+    Inherits="Ground"
+    Designer.OffsetX="2610.56912044573"
+    Designer.OffsetY="928.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="D118D84"
+    Type="Data"
+    Designer.Name="d118d84"
+    Name="Sprite"
+    Inherits="Sprite.Create(canvas, Vector2&lt;pixel&gt;.Zero, Vector2&lt;pixel&gt;(10.0f&lt;pixel&gt;, 1000.0f&lt;pixel&gt;), 0.0f&lt;rad&gt;, Vector2&lt;pixel&gt;.Zero, @&quot;BouncingBalls\wall&quot;, Color.White, true)"
+    Designer.OffsetX="3389.00832364425"
+    Designer.OffsetY="656.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="DBEF8E8"
+    Type="Variable"
+    Designer.Name="dbef8e8"
+    Name="left"
+    Inherits="Ground"
+    Designer.OffsetX="2813.59098908166"
+    Designer.OffsetY="1033.22287243533">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="E44D015"
+    Type="Variable"
+    Designer.Name="e44d015"
+    Name="right"
+    Inherits="Ground"
+    Designer.OffsetX="3007.46499031091"
+    Designer.OffsetY="1133.22287243533">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="E9A16A8"
+    Type="Data"
+    Designer.Name="e9a16a8"
+    Name="Box"
+    Inherits="physics.CreateBox(0.0f&lt;m&gt;, -495.0f&lt;m&gt;, 500.0f&lt;m&gt;, 10.0f&lt;m&gt;, 0.0f&lt;kg&gt;, 0.0f, 0.0f, false)"
+    Designer.OffsetX="2934.34698170612"
+    Designer.OffsetY="871.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="F2CA629"
+    Type="Data"
+    Designer.Name="f2ca629"
+    Name="Box"
+    Inherits="physics.CreateBox(-495.0f&lt;m&gt;, 0.0f&lt;m&gt;, 10.0f&lt;m&gt;, 500.0f&lt;m&gt;, 0.0f&lt;kg&gt;, 0.0f, 0.0f, false)"
+    Designer.OffsetX="3118.34698170612"
+    Designer.OffsetY="975.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="FDDE509"
+    Type="Data"
+    Designer.Name="fdde509"
+    Name="Box"
+    Inherits="physics.CreateBox(495.0f&lt;m&gt;, 0.0f&lt;m&gt;, 10.0f&lt;m&gt;, 500.0f&lt;m&gt;, 0.0f&lt;kg&gt;, 0.0f, 0.0f, false)"
+    Designer.OffsetX="3271.34698170612"
+    Designer.OffsetY="1091.22287243533">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="102803DC"
+    Type="Variable"
+    Designer.Name="102803dc"
+    Name="Player1Score"
+    Inherits="Var&lt;int&gt;"
+    Designer.OffsetX="1390.00401919844"
+    Designer.OffsetY="987.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="10E222AD"
+    Type="Variable"
+    Designer.Name="10e222ad"
+    Name="Player2Score"
+    Inherits="Var&lt;int&gt;"
+    Designer.OffsetX="1391.00401919844"
+    Designer.OffsetY="1105.22287243533">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="117AD1E3"
+    Type="Data"
+    Designer.Name="117ad1e3"
+    Name="Player1Score"
+    Inherits="var 0"
+    Designer.OffsetX="2761.53690180446"
+    Designer.OffsetY="1303.22287243533">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="11FF315D"
+    Type="Data"
+    Designer.Name="11ff315d"
+    Name="Player2Score"
+    Inherits="var 0"
+    Designer.OffsetX="2771.58328895879"
+    Designer.OffsetY="1199.37898305085">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="12177DDB"
+    Type="Variable"
+    Designer.Name="12177ddb"
+    Name="Player1ScoreText"
+    Inherits="Text"
+    Designer.OffsetX="1394.48404378356"
+    Designer.OffsetY="1229.64620519088">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="12AABBA3"
+    Type="Variable"
+    Designer.Name="12aabba3"
+    Name="Player2ScoreText"
+    Inherits="Text"
+    Designer.OffsetX="1392.48404378356"
+    Designer.OffsetY="1346.64620519088">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1353EB5A"
+    Type="Rule"
+    Designer.Name="1353eb5a"
+    Name="Player1ScoreTextString"
+    Inherits="&quot;Score:&quot; + (string !world.Player1Score)"
+    Designer.OffsetX="1661.48404378356"
+    Designer.OffsetY="769.069537946425">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="13FCFB12"
+    Type="Rule"
+    Designer.Name="13fcfb12"
+    Name="Player2ScoreTextString"
+    Inherits="&quot;Score:&quot; + (string !world.Player2Score)"
+    Designer.OffsetX="1661.48404378356"
+    Designer.OffsetY="876.069537946425">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1435DBB2"
+    Type="Data"
+    Designer.Name="1435dbb2"
+    Name="Player1ScoreText"
+    Inherits="Text.Create(canvas, &quot;Segoe&quot;, Vector2&lt;pixel&gt;.Create(0.0f, 530.0f), Vector2&lt;pixel&gt;.Zero, &quot;&quot;, Color.PaleGreen, Vector2&lt;pixel&gt;.One * 100.0f)"
+    Designer.OffsetX="2596.50723736073"
+    Designer.OffsetY="1136.93662090807">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="14BDFDAD"
+    Type="Data"
+    Designer.Name="14bdfdad"
+    Name="Player2ScoreText"
+    Inherits="Text.Create(canvas, &quot;Segoe&quot;, Vector2&lt;pixel&gt;.Create(0.0f, -530.0f), Vector2&lt;pixel&gt;.Zero, &quot;&quot;, Color.PaleGreen, Vector2&lt;pixel&gt;.One * 100.0f)"
+    Designer.OffsetX="2417.48404378356"
+    Designer.OffsetY="1089.06953794643">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="156303CC"
+    Type="Variable"
+    Designer.Name="156303cc"
+    Name="canvas"
+    Inherits="Assign"
+    Designer.OffsetX="2274.04730114641"
+    Designer.OffsetY="745.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="15FF23DE"
+    Type="Data"
+    Designer.Name="15ff23de"
+    Inherits="Canvas.Create(args.DefaultLayer, Vector2&lt;pixel&gt;.Zero, Vector2&lt;pixel&gt;.One * 890.f, StretchMode.Uniform)"
+    Designer.OffsetX="2565.04730114641"
+    Designer.OffsetY="730.222872435326">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1642D0BC"
+    Type="Variable"
+    Designer.Name="1642d0bc"
+    Name="Canvas"
+    Inherits="Canvas"
+    Designer.OffsetX="1773.58965209634"
+    Designer.OffsetY="1151.15325602141">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="169DC7D5"
+    Type="Data"
+    Designer.Name="169dc7d5"
+    Name="Canvas"
+    Inherits="canvas"
+    Designer.OffsetX="3300.29554951101"
+    Designer.OffsetY="1541.72863514719">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1771A2F7"
+    Type="Variable"
+    Designer.Name="1771a2f7"
+    Name="paddle1"
+    Inherits="Wall"
+    Designer.OffsetX="1972.59706601414"
+    Designer.OffsetY="243.677787689563">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="17915ABD"
+    Type="Variable"
+    Designer.Name="17915abd"
+    Name="paddles_y"
+    Inherits="Assign"
+    Designer.OffsetX="1970.01901070637"
+    Designer.OffsetY="112.196966993756">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1834EC11"
+    Type="Data"
+    Designer.Name="1834ec11"
+    Inherits="400.0f&lt;m&gt;"
+    Designer.OffsetX="2183.99760125053"
+    Designer.OffsetY="91.5725245316684">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="18D946EC"
+    Type="Loaded"
+    Designer.Name="18d946ec"
+    Designer.OffsetX="1667.09751204447"
+    Designer.OffsetY="197.272792149866">
+    <Property
+      Name="Arguments"
+      Type="object" />
+  </Node>
+  <Node
+    Id="190C044F"
+    Type="Data"
+    Designer.Name="190c044f"
+    Name="Box"
+    Inherits="physics.CreateBox(0.0f&lt;m&gt;, -paddles_y, 100.0f&lt;m&gt;, 10.0f&lt;m&gt;, 1.0f&lt;kg&gt;, 0.0f, 0.2f, true)"
+    Designer.OffsetX="2209.77815432814"
+    Designer.OffsetY="203.717930419268">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="19CCFC91"
+    Type="Variable"
+    Designer.Name="19ccfc91"
+    Name="paddle2"
+    Inherits="Wall"
+    Designer.OffsetX="1977.75317662966"
+    Designer.OffsetY="371.291525423729">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1A48B489"
+    Type="Data"
+    Designer.Name="1a48b489"
+    Name="Box"
+    Inherits="physics.CreateBox(0.0f&lt;m&gt;, paddles_y, 100.0f&lt;m&gt;, 10.0f&lt;m&gt;, 1.0f&lt;kg&gt;, 0.0f, 0.2f, true)"
+    Designer.OffsetX="2238.13676271351"
+    Designer.OffsetY="322.308474576271">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1B5AF0B7"
+    Type="Data"
+    Designer.Name="1b5af0b7"
+    Name="Sprite"
+    Inherits="Sprite.Create(canvas, Vector2&lt;pixel&gt;.Zero, Vector2&lt;pixel&gt;(200.f&lt;pixel&gt;, 20.0f&lt;pixel&gt;), 0.0f&lt;rad&gt;, Vector2&lt;pixel&gt;.Zero, @&quot;Pong\paddle1&quot;, Color.White, true)"
+    Designer.OffsetX="2597.77547814616"
+    Designer.OffsetY="234.6545941124">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1B84DB44"
+    Type="FunctionCall"
+    Designer.Name="1b84db44"
+    Object="physics.AddFixedPrismaticJoint"
+    Designer.OffsetX="2506.07166092703"
+    Designer.OffsetY="1910.390544157">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1C8D58A6"
+    Type="FunctionParam"
+    Designer.Name="1c8d58a6"
+    Designer.OffsetX="2900.51412301445"
+    Designer.OffsetY="2004.48956289028">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1D3F4CA9"
+    Type="Data"
+    Designer.Name="1d3f4ca9"
+    Inherits="paddle1.Box"
+    Designer.OffsetX="2994.61314174773"
+    Designer.OffsetY="1688.67778768956">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1D95542D"
+    Type="Data"
+    Designer.Name="1d95542d"
+    Inherits="Vector2.UnitX"
+    Designer.OffsetX="2955.94231213131"
+    Designer.OffsetY="1811.1354148082">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1E526826"
+    Type="FunctionCall"
+    Designer.Name="1e526826"
+    Object="physics.AddFixedPrismaticJoint"
+    Designer.OffsetX="2497.04846734987"
+    Designer.OffsetY="1795.66708296164">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1ED8A7CE"
+    Type="Data"
+    Designer.Name="1ed8a7ce"
+    Inherits="paddle2.Box"
+    Designer.OffsetX="2787.07968947297"
+    Designer.OffsetY="1671.92042818912">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1F16F4E3"
+    Type="KeyDown"
+    Designer.Name="1f16f4e3"
+    Key="Left"
+    Designer.OffsetX="2525.40707573524"
+    Designer.OffsetY="2534.27992863515">
+    <Property
+      Name="Object"
+      Type="object" />
+    <Property
+      Name="Key"
+      Type="TypeKeyPressed" />
+  </Node>
+  <Node
+    Id="1FA6597F"
+    Type="FunctionCall"
+    Designer.Name="1fa6597f"
+    Object="paddle1.Box.ApplyForce"
+    Designer.OffsetX="2763.87719170313"
+    Designer.OffsetY="2518.81159678858">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="200C9F2B"
+    Type="Data"
+    Designer.Name="200c9f2b"
+    Inherits="-Vector2&lt;N&gt;.UnitX * 400.0f"
+    Designer.OffsetX="3226.63811944621"
+    Designer.OffsetY="2629.6679750223">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="20891D9B"
+    Type="KeyDown"
+    Designer.Name="20891d9b"
+    Key="Right"
+    Designer.OffsetX="2533.14124165852"
+    Designer.OffsetY="2654.15950044603">
+    <Property
+      Name="Object"
+      Type="object" />
+    <Property
+      Name="Key"
+      Type="TypeKeyPressed" />
+  </Node>
+  <Node
+    Id="217E9C3C"
+    Type="FunctionCall"
+    Designer.Name="217e9c3c"
+    Object="paddle1.Box.ApplyForce"
+    Designer.OffsetX="2767.74427466477"
+    Designer.OffsetY="2667.04977698484">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="21F99148"
+    Type="Data"
+    Designer.Name="21f99148"
+    Inherits="Vector2&lt;N&gt;.UnitX * 400.0f"
+    Designer.OffsetX="3256.28575548546"
+    Designer.OffsetY="2857.82586975914">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="22245FAB"
+    Type="KeyDown"
+    Designer.Name="22245fab"
+    Key="A"
+    Designer.OffsetX="2534.4302693124"
+    Designer.OffsetY="2765.01587867975">
+    <Property
+      Name="Object"
+      Type="object" />
+    <Property
+      Name="Key"
+      Type="TypeKeyPressed" />
+  </Node>
+  <Node
+    Id="2280862B"
+    Type="KeyDown"
+    Designer.Name="2280862b"
+    Key="D"
+    Designer.OffsetX="2539.58637992792"
+    Designer.OffsetY="2866.40509886866">
+    <Property
+      Name="Object"
+      Type="object" />
+    <Property
+      Name="Key"
+      Type="TypeKeyPressed" />
+  </Node>
+  <Node
+    Id="233D7050"
+    Type="FunctionCall"
+    Designer.Name="233d7050"
+    Object="paddle2.Box.ApplyForce"
+    Designer.OffsetX="2827.03954674327"
+    Designer.OffsetY="2805.82079913628">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="23D95548"
+    Type="FunctionCall"
+    Designer.Name="23d95548"
+    Object="paddle2.Box.ApplyForce"
+    Designer.OffsetX="2873.44454228296"
+    Designer.OffsetY="2939.87967513985">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="30BCAA4C"
+    Type="When"
+    Designer.Name="30bcaa4c"
+    Condition="world.Ball.Position.Y &lt; -450.0f&lt;m&gt;"
+    Designer.OffsetX="2404.23847627048"
+    Designer.OffsetY="3055.89216398909" />
+  <Node
+    Id="317284B3"
+    Type="When"
+    Designer.Name="317284b3"
+    Condition="world.Ball.Position.Y &gt; 450.0f&lt;m&gt;"
+    Designer.OffsetX="2410.68361453987"
+    Designer.OffsetY="3534.12142357874" />
+  <Node
+    Id="3EB34B1B"
+    Type="Set"
+    Designer.Name="3eb34b1b"
+    Name="world.Player1Score"
+    Value="!self + 1"
+    Designer.OffsetX="2865.71037635968"
+    Designer.OffsetY="3082.96174472058" />
+  <Node
+    Id="3F6DE64E"
+    Type="Set"
+    Designer.Name="3f6de64e"
+    Name="world.Player2Score"
+    Value="!self + 1"
+    Designer.OffsetX="2850.24204451312"
+    Designer.OffsetY="3205.41937183922" />
+  <Node
+    Id="3FEB8929"
+    Type="Yield"
+    Designer.Name="3feb8929"
+    Designer.OffsetX="3176.72569326602"
+    Designer.OffsetY="3302.09644588026">
+    <Property
+      Name="Arguments"
+      Type="object" />
+  </Node>
+  <Node
+    Id="96D527"
+    Type="FunctionCall"
+    Designer.Name="96d527"
+    Object="ball.Circle.ResetDynamics"
+    Designer.OffsetX="2858.54044620579"
+    Designer.OffsetY="3426.94693651362">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="104E6BD"
+    Type="FunctionCall"
+    Designer.Name="104e6bd"
+    Object="paddle1.Box.ResetDynamics"
+    Designer.OffsetX="2849.51725262862"
+    Designer.OffsetY="3553.27164659391">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1C7BD17"
+    Type="FunctionCall"
+    Designer.Name="1c7bd17"
+    Object="paddle2.Box.ResetDynamics"
+    Designer.OffsetX="2845.65016966698"
+    Designer.OffsetY="3666.26211566774">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="FE88B7F"
+    Type="Let"
+    Designer.Name="fe88b7f"
+    Name="ball.Circle.Position"
+    Value="Vector2&lt;m&gt;.Zero"
+    Designer.OffsetX="3169.19611079097"
+    Designer.OffsetY="3417.47977846881" />
+  <Node
+    Id="1044C8B8"
+    Type="Let"
+    Designer.Name="1044c8b8"
+    Name="paddle1.Box.Position"
+    Value="Vector2.UnitY * paddles_y"
+    Designer.OffsetX="3173.06319375262"
+    Designer.OffsetY="3534.78129497193" />
+  <Node
+    Id="10B75311"
+    Type="Let"
+    Designer.Name="10b75311"
+    Name="paddle2.Box.Position"
+    Value="-Vector2.UnitY * paddles_y"
+    Designer.OffsetX="3182.08638732978"
+    Designer.OffsetY="3650.79378382118" />
+  <Node
+    Id="11530540"
+    Type="Wait"
+    Designer.Name="11530540"
+    Delay="1"
+    Designer.OffsetX="2841.78308670534"
+    Designer.OffsetY="3792.58682574803">
+    <Property
+      Name="Delay"
+      Type="float" />
+  </Node>
+  <Node
+    Id="11F5A428"
+    Type="FunctionCall"
+    Designer.Name="11f5a428"
+    Object="ball.Circle.ApplyLinearImpulse"
+    Designer.OffsetX="2844.3611420131"
+    Designer.OffsetY="3894.86397487223">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="122A1A73"
+    Type="Data"
+    Designer.Name="122a1a73"
+    Inherits="(Vector2&lt;m/s&gt;.Create(random_range -0.5f 0.5f, if random_int() % 2 = 0 then 1.0f else -1.0f) * 30.0f)"
+    Designer.OffsetX="3161.46194486769"
+    Designer.OffsetY="3805.92106675448">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="12B8B6C8"
+    Type="Variable"
+    Designer.Name="12b8b6c8"
+    Name="physics"
+    Inherits="Assign"
+    Designer.OffsetX="2038.46797820236"
+    Designer.OffsetY="621.362890276539">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1341A1BD"
+    Type="Data"
+    Designer.Name="1341a1bd"
+    Inherits="PhysicsWorld.Create(Vector2.Zero)"
+    Designer.OffsetX="2224.08796036115"
+    Designer.OffsetY="474.413737734166">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="13F6CF18"
+    Type="FunctionCall"
+    Designer.Name="13f6cf18"
+    Object="ball.Circle.ApplyLinearImpulse"
+    Designer.OffsetX="2515.40821013813"
+    Designer.OffsetY="2014.17262786063">
+    <Property
+      Name="Object"
+      Type="object" />
+  </Node>
+  <Node
+    Id="145E079A"
+    Type="Data"
+    Designer.Name="145e079a"
+    Inherits="(Vector2&lt;m/s&gt;.Create(random_range -0.5f 0.5f, if random_int() % 2 = 0 then 1.0f else -1.0f) * 30.0f)"
+    Designer.OffsetX="2801.57234929959"
+    Designer.OffsetY="2006.43846193735">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Connection
+    Source="72E6794.Object"
+    Target="6464D71.Object"
+    SourceType="In"
+    TargetType="Out"
+    Type="Property" />
+  <Connection
+    Source="72E6794.Wait"
+    Target="6464D71.Out"
+    Type="Element" />
+  <Connection
+    Source="6464D71.Object"
+    Target="12F73E33.Arguments"
+    SourceType="In"
+    TargetType="Out"
+    Type="Property" />
+  <Connection
+    Source="6464D71.Wait"
+    Target="12F73E33.Out"
+    Type="Element" />
+  <Connection
+    Source="12F73E33.In"
+    Target="590EEB4.Out"
+    Type="Element" />
+  <Connection
+    Source="238CACC0.Wait"
+    Target="12F73E33.Out"
+    Type="Element" />
+  <Connection
+    Source="238CACC0.Object"
+    Target="12F73E33.Arguments"
+    SourceType="In"
+    TargetType="Out"
+    Type="Property" />
+  <Connection
+    Source="241D36D9.Object"
+    Target="238CACC0.Object"
+    SourceType="In"
+    TargetType="Out"
+    Type="Property" />
+  <Connection
+    Source="30E5064A.In"
+    Target="241D36D9.Params"
+    Type="Element" />
+  <Connection
+    Source="311F3210.In"
+    Target="590EEB4.Out"
+    Type="Element" />
+  <Connection
+    Source="384B1694.In"
+    Target="311F3210.Out"
+    Type="Element" />
+  <Connection
+    Source="86F07A1.In"
+    Target="7C0156D.Out"
+    Type="Element" />
+  <Connection
+    Source="8D1FCDF.In"
+    Target="7C0156D.Out"
+    Type="Element" />
+  <Connection
+    Source="9DEDAA8.In"
+    Target="9175877.Out"
+    Type="Element" />
+  <Connection
+    Source="A1B14BF.In"
+    Target="9175877.Out"
+    Type="Element" />
+  <Connection
+    Source="B5F3591.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="BF533A8.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="C286471.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="14E89FF1.In"
+    Target="9175877.Out"
+    Type="Element" />
+  <Connection
+    Source="1DBA08A4.In"
+    Target="7C0156D.Out"
+    Type="Element" />
+  <Connection
+    Source="273359F4.In"
+    Target="7C0156D.Out"
+    Type="Element" />
+  <Connection
+    Source="27DABB82.In"
+    Target="7C0156D.Out"
+    Type="Element" />
+  <Connection
+    Source="A5360B0.In"
+    Target="590EEB4.Game"
+    Type="Element" />
+  <Connection
+    Source="AF7AA58.In"
+    Target="A5360B0.Out"
+    Type="Element" />
+  <Connection
+    Source="BF7C1CC.In"
+    Target="A5360B0.Out"
+    Type="Element" />
+  <Connection
+    Source="A52FB77.In"
+    Target="9175877.Out"
+    Type="Element" />
+  <Connection
+    Source="ADFFC4D.Object"
+    Target="12F73E33.Arguments"
+    SourceType="In"
+    TargetType="Out"
+    Type="Property" />
+  <Connection
+    Source="ADFFC4D.Wait"
+    Target="12F73E33.Out"
+    Type="Element" />
+  <Connection
+    Source="7A5E5E4.Object"
+    Target="ADFFC4D.Object"
+    SourceType="In"
+    TargetType="Out"
+    Type="Property" />
+  <Connection
+    Source="7A5E5E4.Wait"
+    Target="ADFFC4D.Out"
+    Type="Element" />
+  <Connection
+    Source="B7AEA03.In"
+    Target="590EEB4.Game"
+    Type="Element" />
+  <Connection
+    Source="BF7C1CC.In"
+    Target="C46D600.Out"
+    Type="Element" />
+  <Connection
+    Source="CE365D4.In"
+    Target="C46D600.Out"
+    Type="Element" />
+  <Connection
+    Source="D2A1FB6.In"
+    Target="BAA24AB.Out"
+    Type="Element" />
+  <Connection
+    Source="DF75DA4.In"
+    Target="BAA24AB.Out"
+    Type="Element" />
+  <Connection
+    Source="BAA24AB.In"
+    Target="590EEB4.Game"
+    Type="Element" />
+  <Connection
+    Source="241D36D9.Wait"
+    Target="238CACC0.Out"
+    Type="Element" />
+  <Connection
+    Source="CC490C2.In"
+    Target="BAA24AB.Out"
+    Type="Element" />
+  <Connection
+    Source="D2A033B.In"
+    Target="B7AEA03.Out"
+    Type="Element" />
+  <Connection
+    Source="CAAA370.In"
+    Target="B7AEA03.Out"
+    Type="Element" />
+  <Connection
+    Source="D2A033B.In"
+    Target="CB699EA.Out"
+    Type="Element" />
+  <Connection
+    Source="CB699EA.In"
+    Target="590EEB4.Game"
+    Type="Element" />
+  <Connection
+    Source="DBEF8E8.In"
+    Target="590EEB4.Game"
+    Type="Element" />
+  <Connection
+    Source="D118D84.In"
+    Target="DBEF8E8.Out"
+    Type="Element" />
+  <Connection
+    Source="E44D015.In"
+    Target="590EEB4.Game"
+    Type="Element" />
+  <Connection
+    Source="D118D84.In"
+    Target="E44D015.Out"
+    Type="Element" />
+  <Connection
+    Source="E9A16A8.In"
+    Target="CB699EA.Out"
+    Type="Element" />
+  <Connection
+    Source="F2CA629.In"
+    Target="DBEF8E8.Out"
+    Type="Element" />
+  <Connection
+    Source="FDDE509.In"
+    Target="E44D015.Out"
+    Type="Element" />
+  <Connection
+    Source="102803DC.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="10E222AD.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="117AD1E3.In"
+    Target="BAA24AB.Out"
+    Type="Element" />
+  <Connection
+    Source="11FF315D.In"
+    Target="BAA24AB.Out"
+    Type="Element" />
+  <Connection
+    Source="12177DDB.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="12AABBA3.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="1353EB5A.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="13FCFB12.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="1435DBB2.In"
+    Target="BAA24AB.Out"
+    Type="Element" />
+  <Connection
+    Source="14BDFDAD.In"
+    Target="BAA24AB.Out"
+    Type="Element" />
+  <Connection
+    Source="15FF23DE.In"
+    Target="156303CC.Out"
+    Type="Element" />
+  <Connection
+    Source="156303CC.In"
+    Target="590EEB4.Game"
+    Type="Element" />
+  <Connection
+    Source="1642D0BC.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="169DC7D5.In"
+    Target="BAA24AB.Out"
+    Type="Element" />
+  <Connection
+    Source="1834EC11.In"
+    Target="17915ABD.Out"
+    Type="Element" />
+  <Connection
+    Source="17915ABD.In"
+    Target="18D946EC.Game"
+    Type="Element" />
+  <Connection
+    Source="1771A2F7.In"
+    Target="18D946EC.Game"
+    Type="Element" />
+  <Connection
+    Source="190C044F.In"
+    Target="1771A2F7.Out"
+    Type="Element" />
+  <Connection
+    Source="19CCFC91.In"
+    Target="18D946EC.Game"
+    Type="Element" />
+  <Connection
+    Source="1A48B489.In"
+    Target="19CCFC91.Out"
+    Type="Element" />
+  <Connection
+    Source="1B5AF0B7.In"
+    Target="1771A2F7.Out"
+    Type="Element" />
+  <Connection
+    Source="1B5AF0B7.In"
+    Target="19CCFC91.Out"
+    Type="Element" />
+  <Connection
+    Source="1B84DB44.Wait"
+    Target="311F3210.Out"
+    Type="Element" />
+  <Connection
+    Source="1D3F4CA9.In"
+    Target="1B84DB44.Params"
+    Type="Element" />
+  <Connection
+    Source="1D95542D.In"
+    Target="1B84DB44.Params"
+    Type="Element" />
+  <Connection
+    Source="1E526826.Wait"
+    Target="311F3210.Out"
+    Type="Element" />
+  <Connection
+    Source="1ED8A7CE.In"
+    Target="1E526826.Params"
+    Type="Element" />
+  <Connection
+    Source="1D95542D.In"
+    Target="1E526826.Params"
+    Type="Element" />
+  <Connection
+    Source="1F16F4E3.Wait"
+    Target="12F73E33.Out"
+    Type="Element" />
+  <Connection
+    Source="1FA6597F.Wait"
+    Target="1F16F4E3.Out"
+    Type="Element" />
+  <Connection
+    Source="200C9F2B.In"
+    Target="1FA6597F.Params"
+    Type="Element" />
+  <Connection
+    Source="20891D9B.Wait"
+    Target="12F73E33.Out"
+    Type="Element" />
+  <Connection
+    Source="217E9C3C.Wait"
+    Target="20891D9B.Out"
+    Type="Element" />
+  <Connection
+    Source="21F99148.In"
+    Target="217E9C3C.Params"
+    Type="Element" />
+  <Connection
+    Source="22245FAB.Wait"
+    Target="12F73E33.Out"
+    Type="Element" />
+  <Connection
+    Source="2280862B.Wait"
+    Target="12F73E33.Out"
+    Type="Element" />
+  <Connection
+    Source="233D7050.Wait"
+    Target="22245FAB.Out"
+    Type="Element" />
+  <Connection
+    Source="23D95548.Wait"
+    Target="2280862B.Out"
+    Type="Element" />
+  <Connection
+    Source="200C9F2B.In"
+    Target="233D7050.Params"
+    Type="Element" />
+  <Connection
+    Source="21F99148.In"
+    Target="23D95548.Params"
+    Type="Element" />
+  <Connection
+    Source="30BCAA4C.In"
+    Target="12F73E33.Out"
+    Type="Element" />
+  <Connection
+    Source="317284B3.In"
+    Target="12F73E33.Out"
+    Type="Element" />
+  <Connection
+    Source="3EB34B1B.In"
+    Target="30BCAA4C.Out"
+    Type="Element" />
+  <Connection
+    Source="3F6DE64E.In"
+    Target="317284B3.Out"
+    Type="Element" />
+  <Connection
+    Source="FE88B7F.In"
+    Target="30BCAA4C.Out"
+    Type="Element" />
+  <Connection
+    Source="FE88B7F.In"
+    Target="317284B3.Out"
+    Type="Element" />
+  <Connection
+    Source="1044C8B8.In"
+    Target="30BCAA4C.Out"
+    Type="Element" />
+  <Connection
+    Source="1044C8B8.In"
+    Target="317284B3.Out"
+    Type="Element" />
+  <Connection
+    Source="10B75311.In"
+    Target="30BCAA4C.Out"
+    Type="Element" />
+  <Connection
+    Source="10B75311.In"
+    Target="317284B3.Out"
+    Type="Element" />
+  <Connection
+    Source="96D527.Wait"
+    Target="30BCAA4C.Out"
+    Type="Element" />
+  <Connection
+    Source="104E6BD.Wait"
+    Target="30BCAA4C.Out"
+    Type="Element" />
+  <Connection
+    Source="1C7BD17.Wait"
+    Target="30BCAA4C.Out"
+    Type="Element" />
+  <Connection
+    Source="96D527.Wait"
+    Target="317284B3.Out"
+    Type="Element" />
+  <Connection
+    Source="104E6BD.Wait"
+    Target="317284B3.Out"
+    Type="Element" />
+  <Connection
+    Source="1C7BD17.Wait"
+    Target="317284B3.Out"
+    Type="Element" />
+  <Connection
+    Source="11530540.In"
+    Target="317284B3.Out"
+    Type="Element" />
+  <Connection
+    Source="11530540.In"
+    Target="30BCAA4C.Out"
+    Type="Element" />
+  <Connection
+    Source="11F5A428.Wait"
+    Target="317284B3.Out"
+    Type="Element" />
+  <Connection
+    Source="11F5A428.Wait"
+    Target="30BCAA4C.Out"
+    Type="Element" />
+  <Connection
+    Source="122A1A73.In"
+    Target="11F5A428.Params"
+    Type="Element" />
+  <Connection
+    Source="1341A1BD.In"
+    Target="12B8B6C8.Out"
+    Type="Element" />
+  <Connection
+    Source="12B8B6C8.In"
+    Target="590EEB4.Game"
+    Type="Element" />
+  <Connection
+    Source="145E079A.In"
+    Target="13F6CF18.Params"
+    Type="Element" />
+  <Connection
+    Source="13F6CF18.Wait"
+    Target="311F3210.Out"
+    Type="Element" />
+</Flow>

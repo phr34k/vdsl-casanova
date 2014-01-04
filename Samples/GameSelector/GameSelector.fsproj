@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8ce6f4aa-e699-40e7-9420-c99871160fe0</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GameSelector</RootNamespace>
+    <AssemblyName>GameSelector</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Name>GameSelector</Name>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <Tailcalls>false</Tailcalls>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Debug\GameSelector.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Tailcalls>true</Tailcalls>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Release\GameSelector.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(ProjectDir)\..\..\CasanovaBinaries\CnvCompiler.exe" $(TargetFileName);$(TargetDir);$(ProjectName);$(ProjectDir);worlds.cnv</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="main.fs" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CellularAutomaton\CellularAutomaton.fsproj">
+      <Name>CellularAutomaton</Name>
+      <Project>{242560ab-83b3-4876-9be5-e150ca1f4635}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\FallingCubes\FallingCubes.fsproj">
+      <Name>FallingCubes</Name>
+      <Project>{a5690913-d4f6-4a40-a5bc-28efa504d1d2}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\PacMan\PacMan.fsproj">
+      <Name>PacMan</Name>
+      <Project>{a0a9beb3-81a4-4369-9b04-a466f7f24779}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\RotatingCube\RotatingCube.fsproj">
+      <Name>RotatingCube</Name>
+      <Project>{f20ee5f1-d03b-4e91-8f9a-5e2ff96c9a00}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\SnowParticles\SnowParticles.fsproj">
+      <Name>SnowParticles</Name>
+      <Project>{5ee5a0e5-95a9-4b54-9f5e-1e1ff10482f9}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Tetris\Tetris.fsproj">
+      <Name>Tetris</Name>
+      <Project>{9a947d92-109c-483d-a382-16e875f582e5}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <Reference Include="CasanovaPrelude">
+      <HintPath>..\..\CasanovaBinaries\CasanovaPrelude.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\CasanovaBinaries\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="OpenTK">
+      <HintPath>..\..\CasanovaBinaries\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <ProjectReference Include="..\AsteroidShooter\AsteroidShooter.fsproj">
+      <Name>AsteroidShooter</Name>
+      <Project>{32819040-c009-4b65-ac17-c13a3a9b1da8}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\BouncingBalls\BouncingBalls.fsproj">
+      <Name>BouncingBalls</Name>
+      <Project>{51f8c925-16a7-449e-8b88-778fd9d5923e}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\BouncingBall\BouncingBall.fsproj">
+      <Name>BouncingBall</Name>
+      <Project>{a527b38c-1b99-49e2-9106-e673fa8696db}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\MenuUtils\MenuUtils.fsproj">
+      <Name>MenuUtils</Name>
+      <Project>{3d8c449e-b7ee-4596-9cd6-d33be301b554}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Pong\Pong.fsproj">
+      <Name>Pong</Name>
+      <Project>{0b3278e9-30cd-47bc-b74f-89c856e53243}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\RTSgame\RTS.fsproj">
+      <Name>RTS</Name>
+      <Project>{94ddc458-df65-4b1b-a8cc-5317d796010d}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

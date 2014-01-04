@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>BouncingBall</name></assembly>
+<members>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:RotatingCube.Run">
+<summary>
+ The main script does nothing
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:RotatingCube">
+
+</member>
+</members>
+</doc>

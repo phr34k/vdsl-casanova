@@ -1,0 +1,44 @@
+﻿<!--
+***********************************************************************************************
+Casanova.Flow.targets
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+This file defines the steps in the standard build process specific for Casanova.Flow projects.
+For example, it contains the step that actually calls the F# compiler.  
+
+***********************************************************************************************
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <AvailableItemName Include="FlowData">
+      <Visible>false</Visible>
+    </AvailableItemName>
+  </ItemGroup>
+
+  <Target Name="BeforeBuild">    
+    <Message Text="Color: %(FlowData.FullPath)"/>    
+    <Exec Condition="'%(FlowData.FullPath)'!=''" Command="&quot;$(SolutionDir)..\Samples\FlowCompiler\bin\Debug\FlowCompiler.exe&quot; &quot;%(FlowData.FullPath)&quot; &quot;$(IntermediateOutputPath)%(FlowData.Filename).generated.fs&quot;"
+          Outputs="$(IntermediateOutputPath)%(FlowData.Filename).generated.fs">
+      <Output TaskParameter="Outputs" ItemName="Compile" />
+    </Exec>
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="CasanovaPhysics">
+      <HintPath>$(ProjectDir)\..\..\CasanovaBinaries\CasanovaPhysics.dll</HintPath>
+    </Reference>
+    <Reference Include="CasanovaPrelude">
+      <HintPath>$(ProjectDir)\..\..\CasanovaBinaries\CasanovaPrelude.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(ProjectDir)\..\..\CasanovaBinaries\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>$(ProjectDir)\..\..\CasanovaBinaries\OpenTK.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

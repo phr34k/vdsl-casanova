@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Flow
+  Namespace="RotatingCube">
+  <Node
+    Id="A899EB0"
+    Type="Entity"
+    Designer.Name="a899eb0"
+    Name="World"
+    Inherits="CasanovaWorld"
+    Designer.OffsetX="948.047584715213"
+    Designer.OffsetY="179.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="B5F3591"
+    Type="Variable"
+    Designer.Name="b5f3591"
+    Name="Models"
+    Inherits="ModelLayer"
+    Designer.OffsetX="1184.04758471521"
+    Designer.OffsetY="74.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="BF533A8"
+    Type="Variable"
+    Designer.Name="bf533a8"
+    Name="Camera"
+    Inherits="Camera3D"
+    Designer.OffsetX="1388.04758471521"
+    Designer.OffsetY="108.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="C286471"
+    Type="Variable"
+    Designer.Name="c286471"
+    Name="Pitch"
+    Inherits="Rule&lt;float32&lt;rad/s&gt;&gt;"
+    Designer.OffsetX="1355.74473823831"
+    Designer.OffsetY="293.6974895007">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="EB29ED9"
+    Type="Variable"
+    Designer.Name="eb29ed9"
+    Name="Cube"
+    Inherits="Model"
+    Designer.OffsetX="1583.06123528209"
+    Designer.OffsetY="186.740830611293">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="E73862D"
+    Type="Loaded"
+    Designer.Name="e73862d"
+    Designer.OffsetX="1171.64044253227"
+    Designer.OffsetY="1104.66333275555">
+    <Property
+      Name="Arguments"
+      Type="object" />
+  </Node>
+  <Node
+    Id="F5D6BD2"
+    Type="Thread"
+    Designer.Name="f5d6bd2"
+    Priority="Input"
+    Designer.OffsetX="1459.64044253227"
+    Designer.OffsetY="1784.66333275555">
+    <Property
+      Name="Arguments"
+      Type="object" />
+    <Property
+      Name="Priority"
+      Type="ThreadPriority" />
+  </Node>
+  <Node
+    Id="FBFB053"
+    Type="KeyDown"
+    Designer.Name="fbfb053"
+    Key="Up"
+    Designer.OffsetX="1769.64044253227"
+    Designer.OffsetY="1626.66333275555">
+    <Property
+      Name="Object"
+      Type="object" />
+    <Property
+      Name="Key"
+      Type="TypeKeyPressed" />
+  </Node>
+  <Node
+    Id="E1DA4CC"
+    Type="Variable"
+    Designer.Name="e1da4cc"
+    Name="world"
+    Inherits="World"
+    Designer.OffsetX="1449"
+    Designer.OffsetY="1087.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="E558DC8"
+    Type="Variable"
+    Designer.Name="e558dc8"
+    Name="Roll"
+    Inherits="Rule&lt;float32&lt;rad/s&gt;&gt;"
+    Designer.OffsetX="1619.75537799631"
+    Designer.OffsetY="314.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="EE5BCE0"
+    Type="Data"
+    Designer.Name="ee5bce0"
+    Name="Models"
+    Inherits="model_layer"
+    Designer.OffsetX="1701"
+    Designer.OffsetY="1031.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="F6E454F"
+    Type="Data"
+    Designer.Name="f6e454f"
+    Name="Camera"
+    Inherits="camera"
+    Designer.OffsetX="1709"
+    Designer.OffsetY="1155.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="FFD3F06"
+    Type="Data"
+    Designer.Name="ffd3f06"
+    Name="Pitch"
+    Inherits="Rule.Create 0.0f&lt;rad/s&gt;"
+    Designer.OffsetX="1934"
+    Designer.OffsetY="1041.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1070AB25"
+    Type="Data"
+    Designer.Name="1070ab25"
+    Name="Roll"
+    Inherits="Rule.Create 0.0f&lt;rad/s&gt;"
+    Designer.OffsetX="1941.47572218808"
+    Designer.OffsetY="1157.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="109C9ADF"
+    Type="Data"
+    Designer.Name="109c9adf"
+    Name="Cube"
+    Inherits="cube"
+    Designer.OffsetX="2138.47572218808"
+    Designer.OffsetY="1084.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="11128DB3"
+    Type="Variable"
+    Designer.Name="11128db3"
+    Name="model_layer"
+    Inherits="Assign"
+    Designer.OffsetX="1467.48924400738"
+    Designer.OffsetY="854.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1190E638"
+    Type="Data"
+    Designer.Name="1190e638"
+    Inherits="ModelLayer.Create(args.GraphicsDevice, args.Content)"
+    Designer.OffsetX="1715.48924400738"
+    Designer.OffsetY="785.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="127EC780"
+    Type="Variable"
+    Designer.Name="127ec780"
+    Name="camera"
+    Inherits="Assign"
+    Designer.OffsetX="1896.48924400738"
+    Designer.OffsetY="803.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="12C3E49C"
+    Type="Data"
+    Designer.Name="12c3e49c"
+    Inherits="Camera3D.Create(Vector3.UnitZ * 100.0f + Vector3.UnitY * 2.0f, args.GraphicsDevice.Viewport.AspectRatio)"
+    Designer.OffsetX="2153.48924400738"
+    Designer.OffsetY="780.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="137BC293"
+    Type="Variable"
+    Designer.Name="137bc293"
+    Name="cube"
+    Inherits="Assign"
+    Designer.OffsetX="1409.04257734071"
+    Designer.OffsetY="1355.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="13C45961"
+    Type="Data"
+    Designer.Name="13c45961"
+    Inherits="Model.Create(model_layer, Vector3.Zero, Vector3.One * 30.0f, Microsoft.Xna.Framework.Quaternion.Identity, @&quot;3D Test\cube&quot;)"
+    Designer.OffsetX="1650.04257734071"
+    Designer.OffsetY="1393.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="141A81C5"
+    Type="Rule"
+    Designer.Name="141a81c5"
+    Name="CubeRotation"
+    Inherits="!self.Cube.Rotation * Microsoft.Xna.Framework.Quaternion.CreateFromYawPitchRoll(dt * 0.1f&lt;_&gt;, dt * !self.Pitch * 0.1f&lt;_&gt;, dt * !self.Roll * 0.1f&lt;_&gt;)"
+    Designer.OffsetX="1350.77197295636"
+    Designer.OffsetY="435.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="14C958FC"
+    Type="Rule"
+    Designer.Name="14c958fc"
+    Name="Pitch"
+    Inherits="0.0f&lt;rad/s&gt;"
+    Designer.OffsetX="1355.77197295636"
+    Designer.OffsetY="543.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="154C3923"
+    Type="Rule"
+    Designer.Name="154c3923"
+    Name="Roll"
+    Inherits="0.0f&lt;rad/s&gt;"
+    Designer.OffsetX="1355.77197295636"
+    Designer.OffsetY="649.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="15E7B3EB"
+    Type="Rule"
+    Designer.Name="15e7b3eb"
+    Name="ModelsView"
+    Inherits="Camera.View"
+    Designer.OffsetX="1630.77197295636"
+    Designer.OffsetY="533.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="16643D1F"
+    Type="Rule"
+    Designer.Name="16643d1f"
+    Name="ModelsProjection"
+    Inherits="Camera.Projection"
+    Designer.OffsetX="1628.77197295636"
+    Designer.OffsetY="647.04">
+    <Property
+      Name="Name"
+      Type="object" />
+    <Property
+      Name="Inherits"
+      Type="object" />
+  </Node>
+  <Node
+    Id="1764F4D1"
+    Type="Set"
+    Designer.Name="1764f4d1"
+    Name="world.Pitch"
+    Value="100.0f&lt;rad/s&gt;"
+    Designer.OffsetX="2005.77197295636"
+    Designer.OffsetY="1651.04" />
+  <Node
+    Id="179B4A36"
+    Type="KeyDown"
+    Designer.Name="179b4a36"
+    Key="Down"
+    Designer.OffsetX="1768.77197295636"
+    Designer.OffsetY="1738.04">
+    <Property
+      Name="Object"
+      Type="object" />
+    <Property
+      Name="Key"
+      Type="TypeKeyPressed" />
+  </Node>
+  <Node
+    Id="186E9A46"
+    Type="Set"
+    Designer.Name="186e9a46"
+    Name="world.Pitch"
+    Value="-100.0f&lt;rad/s&gt;"
+    Designer.OffsetX="2004.77197295636"
+    Designer.OffsetY="1759.04" />
+  <Node
+    Id="18FC2455"
+    Type="Set"
+    Designer.Name="18fc2455"
+    Name="world.Roll"
+    Value="100.0f&lt;rad/s&gt;"
+    Designer.OffsetX="2008.77197295636"
+    Designer.OffsetY="1872.04" />
+  <Node
+    Id="194FD3B1"
+    Type="KeyDown"
+    Designer.Name="194fd3b1"
+    Key="Left"
+    Designer.OffsetX="1768.77197295636"
+    Designer.OffsetY="1848.04">
+    <Property
+      Name="Object"
+      Type="object" />
+    <Property
+      Name="Key"
+      Type="TypeKeyPressed" />
+  </Node>
+  <Node
+    Id="19ED1C6B"
+    Type="KeyDown"
+    Designer.Name="19ed1c6b"
+    Key="Right"
+    Designer.OffsetX="1771.77197295636"
+    Designer.OffsetY="1956.04">
+    <Property
+      Name="Object"
+      Type="object" />
+    <Property
+      Name="Key"
+      Type="TypeKeyPressed" />
+  </Node>
+  <Node
+    Id="1A6BBD01"
+    Type="Set"
+    Designer.Name="1a6bbd01"
+    Name="world.Roll"
+    Value="-100.0f&lt;rad/s&gt;"
+    Designer.OffsetX="2016.77197295636"
+    Designer.OffsetY="1986.04" />
+  <Connection
+    Source="B5F3591.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="BF533A8.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="C286471.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="EB29ED9.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="FBFB053.Wait"
+    Target="F5D6BD2.Out"
+    Type="Element" />
+  <Connection
+    Source="E558DC8.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="EE5BCE0.In"
+    Target="E1DA4CC.Out"
+    Type="Element" />
+  <Connection
+    Source="F6E454F.In"
+    Target="E1DA4CC.Out"
+    Type="Element" />
+  <Connection
+    Source="FFD3F06.In"
+    Target="E1DA4CC.Out"
+    Type="Element" />
+  <Connection
+    Source="1070AB25.In"
+    Target="E1DA4CC.Out"
+    Type="Element" />
+  <Connection
+    Source="109C9ADF.In"
+    Target="E1DA4CC.Out"
+    Type="Element" />
+  <Connection
+    Source="1190E638.In"
+    Target="11128DB3.Out"
+    Type="Element" />
+  <Connection
+    Source="12C3E49C.In"
+    Target="127EC780.Out"
+    Type="Element" />
+  <Connection
+    Source="13C45961.In"
+    Target="137BC293.Out"
+    Type="Element" />
+  <Connection
+    Source="141A81C5.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="14C958FC.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="154C3923.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="15E7B3EB.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="16643D1F.In"
+    Target="A899EB0.Out"
+    Type="Element" />
+  <Connection
+    Source="1764F4D1.In"
+    Target="FBFB053.Out"
+    Type="Element" />
+  <Connection
+    Source="179B4A36.Wait"
+    Target="F5D6BD2.Out"
+    Type="Element" />
+  <Connection
+    Source="186E9A46.In"
+    Target="179B4A36.Out"
+    Type="Element" />
+  <Connection
+    Source="194FD3B1.Wait"
+    Target="F5D6BD2.Out"
+    Type="Element" />
+  <Connection
+    Source="18FC2455.In"
+    Target="194FD3B1.Out"
+    Type="Element" />
+  <Connection
+    Source="19ED1C6B.Wait"
+    Target="F5D6BD2.Out"
+    Type="Element" />
+  <Connection
+    Source="1A6BBD01.In"
+    Target="19ED1C6B.Out"
+    Type="Element" />
+  <Connection
+    Source="E1DA4CC.In"
+    Target="E73862D.Game"
+    Type="Element" />
+  <Connection
+    Source="11128DB3.In"
+    Target="E73862D.Game"
+    Type="Element" />
+  <Connection
+    Source="127EC780.In"
+    Target="E73862D.Game"
+    Type="Element" />
+  <Connection
+    Source="137BC293.In"
+    Target="E73862D.Game"
+    Type="Element" />
+  <Connection
+    Source="F5D6BD2.In"
+    Target="E73862D.Out"
+    Type="Element" />
+</Flow>

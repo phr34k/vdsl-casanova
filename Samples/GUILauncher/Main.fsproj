@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>52342540-66b9-4fd9-b917-bf7faa490a73</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GUILauncher</RootNamespace>
+    <AssemblyName>GUILauncher</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Name>Main</Name>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <Tailcalls>false</Tailcalls>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Debug\GUILauncher.XML</DocumentationFile>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Tailcalls>true</Tailcalls>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Release\GUILauncher.XML</DocumentationFile>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsteroidShooterGame">
+      <HintPath>..\AsteroidShooter\AsteroidShooterGame.dll</HintPath>
+    </Reference>
+    <Reference Include="AsteroidShooter_World_Functions">
+      <HintPath>..\AsteroidShooter\AsteroidShooter_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncingBallGame">
+      <HintPath>..\BouncingBall\BouncingBallGame.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncingBallsGame">
+      <HintPath>..\BouncingBalls\BouncingBallsGame.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncingBalls_World_Functions">
+      <HintPath>..\BouncingBalls\BouncingBalls_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncingBall_World_Functions">
+      <HintPath>..\BouncingBall\BouncingBall_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="CellularAutomatonGame">
+      <HintPath>..\CellularAutomaton\CellularAutomatonGame.dll</HintPath>
+    </Reference>
+    <Reference Include="CellularAutomaton_World_Functions">
+      <HintPath>..\CellularAutomaton\CellularAutomaton_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfirmationMenu_Menu_Functions">
+      <HintPath>..\MenuUtils\ConfirmationMenu_Menu_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="Entities_World_Functions">
+      <HintPath>..\Tetris\Entities_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="FallingCubesGame">
+      <HintPath>..\FallingCubes\FallingCubesGame.dll</HintPath>
+    </Reference>
+    <Reference Include="FallingCubes_World_Functions">
+      <HintPath>..\FallingCubes\FallingCubes_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="GameSelectorGame">
+      <HintPath>..\GameSelector\GameSelectorGame.dll</HintPath>
+    </Reference>
+    <Reference Include="GameSelector_World_Functions">
+      <HintPath>..\GameSelector\GameSelector_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="MainMenu_Menu_Functions">
+      <HintPath>..\MenuUtils\MainMenu_Menu_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="MenuUtilsGame">
+      <HintPath>..\MenuUtils\MenuUtilsGame.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\CasanovaBinaries\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>..\..\CasanovaBinaries\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="PacManGame">
+      <HintPath>..\PacMan\PacManGame.dll</HintPath>
+    </Reference>
+    <Reference Include="PacMan_World_Functions">
+      <HintPath>..\PacMan\PacMan_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="PauseMenu_Menu_Functions">
+      <HintPath>..\MenuUtils\PauseMenu_Menu_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="PongGame">
+      <HintPath>..\Pong\PongGame.dll</HintPath>
+    </Reference>
+    <Reference Include="Pong_World_Functions">
+      <HintPath>..\Pong\Pong_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="RotatingCubeGame">
+      <HintPath>..\RotatingCube\RotatingCubeGame.dll</HintPath>
+    </Reference>
+    <Reference Include="RotatingCube_World_Functions">
+      <HintPath>..\RotatingCube\RotatingCube_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="RTSGame">
+      <HintPath>..\RTSgame\RTSGame.dll</HintPath>
+    </Reference>
+    <Reference Include="RTS_StarSystems_StarSystem_Functions">
+      <HintPath>..\RTSgame\RTS_StarSystems_StarSystem_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="RTS_World_World_Functions">
+      <HintPath>..\RTSgame\RTS_World_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SnowParticlesGame">
+      <HintPath>..\SnowParticles\SnowParticlesGame.dll</HintPath>
+    </Reference>
+    <Reference Include="SnowParticles_World_Functions">
+      <HintPath>..\SnowParticles\SnowParticles_World_Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="TetrisGame">
+      <HintPath>..\Tetris\TetrisGame.dll</HintPath>
+    </Reference>
+    <Reference Include="Tetris_World_Functions">
+      <HintPath>..\Tetris\Tetris_World_Functions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Content\Content.csproj">
+      <Name>Content</Name>
+      <Project>{2cceadcf-4dd4-41da-b97c-c7fdb44f5845}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\GameSelector\GameSelector.fsproj">
+      <Name>GameSelector</Name>
+      <Project>{8ce6f4aa-e699-40e7-9420-c99871160fe0}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

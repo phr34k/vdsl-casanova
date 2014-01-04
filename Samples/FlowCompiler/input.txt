@@ -1,0 +1,5 @@
+Text.Create(canvas, "Segoe", Vector2<pixel>.Create(0.0f, 530.0f), Vector2<pixel>.Zero, "", Color.PaleGreen, Vector2<pixel>.One * 100.0f)
+//Sprite.Create(args.DefaultLayer, Vector2<pixel>.Zero, Vector2<pixel>((50.0f + 25.0f / 10.0f * 2.2f<pixel>) < 10.0f * 85.0f, 50.0f * 2.2f<pixel>), @"BouncingBalls\ball")
+//Sprite.Create(args.DefaultLayer, Vector2<pixel>.Zero, Vector2<pixel>(1000.0f<pixel>, 10.0f<pixel>), 0.0f<rad>, Vector2<pixel>.Zero, @"BouncingBalls\wall", Color.White, true)
+//, , Vector2<pixel>.Zero, @"BouncingBalls\wall", Color.White, true
+//Sprite.Create(args.DefaultLayer,Vector2<pixel>.Zero, Vector2<pixel>(1000.0f<pixel>, 10.0f<pixel>), 0.0f<rad>)

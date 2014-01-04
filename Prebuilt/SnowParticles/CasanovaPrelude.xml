@@ -1,0 +1,3811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>CasanovaPrelude</name></assembly>
+<members>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:AccelerationIndices">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Action">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Core.UpdateFieldAttribute">
+<summary>
+ Apply this attribute to a C# property to have Casanova 
+ explore it.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Core.RuleUpdateFrequencyAttribute">
+<summary>
+ Apply this attribute to a rule method in order to specify
+ how often this rule is updated.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Core.UpdateFrequency">
+<summary>
+ Specify how often to update a rule.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Core.InputEventAll">
+<summary>
+ Attribute that marks an input event as detected on the client
+ and responded to both on the host and locally on the client.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Core.InputEventClientOnly">
+<summary>
+ Attribute that marks an input event as detected on the client
+ and responded to locally on the client.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Core.InputEventDefault">
+<summary>
+ Attribute that marks an input event as detected on the client
+ but responded to on the host.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Core.CasanovaDrawable">
+<summary>
+ Attribute that marks an entity as a drawable entity with the
+ methods IdenticalRule, Clear, Register, and Draw. Defining
+ a new CasanovaDrawable allows to support different rendering
+ engines.    
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Core.CasanovaEntity">
+<summary>
+ Attribute that marks an entity as a Casanova entity which rules should be applied 
+ (and recursively to its attributes). Note that if a datatype accessible through
+ the game world is not marked with this attribute, then both it and its attributes
+ will be ignored by the update and draw functions.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="F:Casanova.Core.Ref`1.Value">
+<summary>
+ Contents of the reference.
+</summary>
+</member>
+<member name="M:Casanova.Core.Ref`1.op_Implicit(Casanova.Core.Ref{`0})">
+<summary>
+ Implicitly convert a ref to its current value
+</summary>
+</member>
+<member name="P:Casanova.Core.Ref`1.GetValue">
+<summary>
+ Get the value of the variable.
+</summary>
+</member>
+<member name="P:Casanova.Core.Ref`1.GetImmediateValue">
+<summary>
+ Get the value of the variable.
+</summary>
+</member>
+<member name="M:Casanova.Core.Ref`1.Create(`0)">
+<summary>
+ Create an instance of a reference and initialize it with some contents.
+</summary>
+</member>
+<member name="T:Casanova.Core.Ref`1">
+<summary>
+ Immutable reference to a value. 
+ References are not traversed and their rules are not applied.
+ References are akin to read-only pointers.
+</summary>
+</member>
+<member name="F:Casanova.Core.Var`1.Value">
+<summary>
+ Contents of the variable.
+</summary>
+</member>
+<member name="M:Casanova.Core.Var`1.op_Implicit(Casanova.Core.Var{`0})">
+<summary>
+ Implicitly convert a var to its current value
+</summary>
+</member>
+<member name="P:Casanova.Core.Var`1.GetValue">
+<summary>
+ Get the value of the variable.
+</summary>
+</member>
+<member name="P:Casanova.Core.Var`1.GetImmediateValue">
+<summary>
+ Get the value of the variable.
+</summary>
+</member>
+<member name="M:Casanova.Core.Var`1.Swap(Casanova.Core.Var{`0})">
+<summary>
+ Internal use only.
+</summary>
+</member>
+<member name="M:Casanova.Core.Var`1.SetValue(`0)">
+<summary>
+ Set the value of the variable.
+</summary>
+</member>
+<member name="M:Casanova.Core.Var`1.Create(`0)">
+<summary>
+ Create an instance of a variable and initialize it with some contents.
+</summary>
+</member>
+<member name="M:Casanova.Core.Var`1.Apply(Casanova.Core.Var{`0},`0)">
+<summary>
+ Internal use only.
+</summary>
+</member>
+<member name="T:Casanova.Core.Var`1">
+<summary>
+ Variable.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Core.RuleTable`1.op_Implicit(Casanova.Core.RuleTable{`0})">
+<summary>
+ Implicitly convert a rule table to its current value
+</summary>
+</member>
+<member name="P:Casanova.Core.RuleTable`1.Value">
+<summary>
+ Get the current list of values.
+</summary>
+</member>
+<member name="P:Casanova.Core.RuleTable`1.GetValue">
+<summary>
+ Get the current list of values.
+</summary>
+</member>
+<member name="P:Casanova.Core.RuleTable`1.GetImmediateValue">
+<summary>
+ Get the next list of values. Not to be used explicitly.
+</summary>
+</member>
+<member name="P:Casanova.Core.RuleTable`1.Empty">
+<summary>
+ Create an empty rule table.
+</summary>
+</member>
+<member name="P:Casanova.Core.RuleTable`1.Count">
+<summary>
+ Get the number of elements already inserted in the next value.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Core.RuleTable`1.Swap(Casanova.Core.RuleTable{`0})">
+<summary>
+ Internal use only.
+</summary>
+</member>
+<member name="M:Casanova.Core.RuleTable`1.SetValue(System.Collections.Generic.IEnumerable{`0})">
+<summary>
+ Set the next list of values.
+</summary>
+</member>
+<member name="M:Casanova.Core.RuleTable`1.GetValueMember(Casanova.Core.RuleTable{`0})">
+<summary>
+ Get the current value via a static member
+</summary>
+</member>
+<member name="M:Casanova.Core.RuleTable`1.GetImmediateValueMember(Casanova.Core.RuleTable{`0})">
+<summary>
+ Get the next list of values. Not to be used explicitly.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Core.RuleTable`1.Create(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,System.Collections.Generic.IEnumerable{`0}})">
+<summary>
+ Create a rule table from a function that returns the initial value of the collection.
+</summary>
+</member>
+<member name="M:Casanova.Core.RuleTable`1.Clear">
+<summary>
+ Clear the next list of values. To be used exclusively inside scripts.
+</summary>
+</member>
+<member name="M:Casanova.Core.RuleTable`1.Apply(Casanova.Core.RuleTable{`0},System.Collections.Generic.IEnumerable{`0})">
+<summary>
+ Internal use only.
+</summary>
+</member>
+<member name="M:Casanova.Core.RuleTable`1.Add(`0)">
+<summary>
+ Add an element to the next list of values. To be used exclusively inside scripts.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Core.RuleTable`1">
+<summary>
+ Store a list of values in a double buffer. The current list can be only read,
+ while the next list can be only written to. RuleTable is also enumerable; 
+ enumerating it yields the current values.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Core.Rule`1.op_Implicit(Casanova.Core.Rule{`0})">
+<summary>
+ Implicitly convert a rule to its immediate value
+</summary>
+</member>
+<member name="P:Casanova.Core.Rule`1.Value">
+<summary>
+ Get the current value.
+</summary>
+</member>
+<member name="P:Casanova.Core.Rule`1.GetValue">
+<summary>
+ Get the current value, additional property
+</summary>
+</member>
+<member name="P:Casanova.Core.Rule`1.GetImmediateValue">
+<summary>
+ Get the next value; do not use directly.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Core.Rule`1.Swap(Casanova.Core.Rule{`0})">
+<summary>
+ Internal use only.
+</summary>
+</member>
+<member name="M:Casanova.Core.Rule`1.SetValue(`0)">
+<summary>
+ Set the next value.
+</summary>
+</member>
+<member name="M:Casanova.Core.Rule`1.GetValueMember(Casanova.Core.Rule{`0})">
+<summary>
+ Get the current value via a static member
+</summary>
+</member>
+<member name="M:Casanova.Core.Rule`1.GetImmediateValueMember(Casanova.Core.Rule{`0})">
+<summary>
+ Get the next value via a static member; do not use directly.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Core.Rule`1.Create(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,`0})">
+<summary>
+ Create a rule from a function that returns the value for both current and next.
+</summary>
+</member>
+<member name="M:Casanova.Core.Rule`1.Create``1(`0)">
+<summary>
+ Create a rule from a value type that is duplicated.
+</summary>
+</member>
+<member name="M:Casanova.Core.Rule`1.Apply(Casanova.Core.Rule{`0},`0)">
+<summary>
+ Internal use only.
+</summary>
+</member>
+<member name="M:Casanova.Core.Rule`1.#ctor(`0,`0)">
+<summary>
+ Create a rule container with the two elements.
+</summary>
+</member>
+<member name="M:Casanova.Core.Rule`1.#ctor(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,`0})">
+<summary>
+ Create a rule container with a function that initializes its elements.
+</summary>
+</member>
+<member name="T:Casanova.Core.Rule`1">
+<summary>
+ Store a value in a double buffer. Only the current element can be read, 
+ and only the next element can be written to.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Core.List`1.get_Length``1(System.Collections.Generic.List{``0})">
+<summary>
+ Get the number of elements of a list.
+</summary>
+</member>
+<member name="M:Casanova.Core.op_ColonEquals``2(``0,``1)">
+<summary>
+ Assign the next value of a rule or rule table, and the value of a variable.
+</summary>
+</member>
+<member name="M:Casanova.Core.assign``2(``0,``1)">
+<summary>
+ Assign the next value of a rule or rule table, and the value of a variable.
+</summary>
+</member>
+<member name="M:Casanova.Core.op_Dereference``2(``0)">
+<summary>
+ Lookup the current value of a rule, rule table, var, or ref.
+</summary>
+</member>
+<member name="M:Casanova.Core.immediate_lookup``2(``0)">
+<summary>
+ Lookup the next value of a rule or  rule table, or the current value of a var or ref.
+</summary>
+</member>
+<member name="M:Casanova.Core.lookup``2(``0)">
+<summary>
+ Lookup the current value of a rule, rule table, var, or ref.
+</summary>
+</member>
+<member name="M:Casanova.Core.ref``1(``0)">
+<summary>
+ Create an instance of a reference and initialize it with some contents.
+</summary>
+</member>
+<member name="M:Casanova.Core.var``1(``0)">
+<summary>
+ Create an instance of a variable and initialize it with some contents.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Core">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Coroutines.set_Scripts(Casanova.Coroutines.ScriptSet,Casanova.Coroutines.ScriptSet,Casanova.Coroutines.ScriptSet)">
+<summary>
+ Internal use only : Restore the three ScriptSet: the scripts, the ai_script, the input_script with the given in input. Problemi di chiusura e inform expert
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.get_Scripts">
+<summary>
+ Internal use only : Return as tuple three ScriptSet: the scripts, the ai_script, the input_script.
+</summary>
+</member>
+<member name="P:Casanova.Coroutines.wait_right_mouse_press">
+<summary>
+ Wait for pressure and then release of the right mouse button
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Casanova.Coroutines.wait_left_mouse_press">
+<summary>
+ Wait for pressure and then release of the left mouse button
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.wait_scroll_wheel(System.Int32)">
+<summary>
+ Wait for mouse wheel delta
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.wait_key_up(Microsoft.Xna.Framework.Input.Keys)">
+<summary>
+ Wait for pressure of a key
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.wait_key_down(Microsoft.Xna.Framework.Input.Keys)">
+<summary>
+ Wait for release of a key
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.wait_key_press(Microsoft.Xna.Framework.Input.Keys)">
+<summary>
+ Wait for pressure and then release of a key
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.step_input_scripts">
+<summary>
+ Update (until they either terminate or evaluate a yield operation) all active input scripts.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.clear_input_scripts">
+<summary>
+ Clear the list of active input scripts.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.run_input_script(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}})">
+<summary>
+ Add a script to the list of active input scripts.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.step_ai_scripts">
+<summary>
+ Update (until they either terminate or evaluate a yield operation) all active ai scripts.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.clear_ai_scripts">
+<summary>
+ Clear the list of active ai scripts.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.run_ai_script(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}})">
+<summary>
+ Add a script to the list of active ai scripts.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.step_scripts">
+<summary>
+ Update (until they either terminate or evaluate a yield operation) all active scripts.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.clear_scripts">
+<summary>
+ Clear the list of active scripts.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.run_script(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}})">
+<summary>
+ Add a script to the list of active scripts.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Coroutines.wait_condition(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,System.Boolean})">
+<summary>
+ Wait for a certain condition to be met.
+</summary>
+</member>
+<member name="P:Casanova.Coroutines.wait">
+<summary>
+ Keep ticking until a certain interval has elapsed.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.wait_doing(Microsoft.FSharp.Core.FSharpFunc{System.Single,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}},System.Single)">
+<summary>
+ Run an action every tick until a certain interval has elapsed.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.repeat_(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}})">
+<summary>
+ Keep running a coroutine.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.op_DotAmpAmpGreater(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}})">
+<summary>
+ Run two coroutines in parallel, until both of them complete.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.parallel_many_(Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.Unit)">
+<summary>
+ Run a list of coroutines in parallel, until all of them complete.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.op_EqualsEqualsGreater``2(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.FSharpOption{``0}}},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{``1}}})">
+<summary>
+ Run a coroutine only after a guard coroutine succeeds and returns Some(x); until that
+ happens, keep running the guard coroutine.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.op_EqualsGreaterGreater``2(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{``0}},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{``1}}})">
+<summary>
+ Input-friendly alias for bind
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.op_EqualsGreater(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}})">
+<summary>
+ Input-friendly alias for combine
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.op_DotBarBarGreater``2(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{``0}},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{``1}})">
+<summary>
+ Run two coroutines in parallel, and discard their result.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.op_DotBarBar``2(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{``0}},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{``1}},Microsoft.FSharp.Core.Unit)">
+<summary>
+ Run two coroutines concurrently; first one to terminate kills the other one.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.op_DotAmpAmp``2(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{``0}},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{``1}},Microsoft.FSharp.Core.Unit)">
+<summary>
+ Run two coroutines in parallel; first one to terminate kills the other one.
+</summary>
+</member>
+<member name="M:Casanova.Coroutines.ignore_``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{``0}})">
+<summary>
+ Ignore the result of a coroutine, and return Unit instead of it.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Coroutines.yield_(Microsoft.FSharp.Core.Unit)">
+<summary>
+ Suspend a coroutine for a tick of the main loop.
+</summary>
+</member>
+<member name="P:Casanova.Coroutines.co">
+<summary>
+ Create a coroutine.
+</summary>
+</member>
+<member name="T:Casanova.Coroutines">
+
+</member>
+<member name="F:Casanova.Drawing.Model.BoundingSphere">
+<summary>
+ The original BoundingSphere of the loaded model.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Casanova.Drawing.Model.World">
+<summary>
+ The world matrix of the model, consisting of scale, rotation, and translation.
+</summary>
+</member>
+<member name="P:Casanova.Drawing.Model.TransformedBoundingSphere">
+<summary>
+ The current bounding sphere of the transformed model.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Model.Reload">
+<summary>
+ Internal use only: called after deserialization, restore non-serializable attributes.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Model.Register">
+<summary>
+ Internal use only: register the model into its containing layer.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Model.Create(Casanova.Drawing.ModelLayer,Casanova.Math.Vector3,Casanova.Math.Vector3,Microsoft.Xna.Framework.Quaternion,System.String)">
+<summary>
+ Create a model inside a model layer, with a given position, size, and rotation.
+ The model is loaded from the given path.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Model.Clear">
+<summary>
+ Internal use only: copy all current values into the corresponding next values.
+</summary>
+</member>
+<member name="T:Casanova.Drawing.Model">
+<summary>
+ A 3D model is drawn inside a model layer, given a local (world) transform of translation,
+ rotation, and scale.
+ A model is re-scaled against its bounding sphere, so that its bounding sphere is centered 
+ on the origin and its radius is Size * Scale.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.ModelLayer.Unproject``1(Casanova.Math.Vector2)">
+<summary>
+ Unproject a vector from screen-space to unnormalized screen-space.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.ModelLayer.Reload(Microsoft.Xna.Framework.Content.ContentManager,Casanova.Drawing.GraphicsDevice)">
+<summary>
+ Internal use only: called after deserialization to restore non-serializable attributes to itself and to its fields.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.ModelLayer.Register">
+<summary>
+ Internal use only: register to its own container. Since the SpriteLayer has no containers, registration
+ does nothing.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.ModelLayer.IdenticalRule">
+<summary>
+ Internal use only: copy all current values from the current to the next state of each rule.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.ModelLayer.Draw">
+<summary>
+ Internal use only: sets the layout of the root canvas and draws it .
+</summary>
+</member>
+<member name="M:Casanova.Drawing.ModelLayer.Create(Casanova.Drawing.GraphicsDevice,Microsoft.Xna.Framework.Content.ContentManager)">
+<summary>
+ Create a new model layer with a graphics device and a content manager.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.ModelLayer.Create(Casanova.Drawing.GraphicsDevice,Microsoft.Xna.Framework.Content.ContentManager,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)">
+<summary>
+ Create a new model layer with a graphics device, a content manager, a view matrix and a projection matrix.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.ModelLayer.Clear">
+<summary>
+ Internal use only: clear the invoke the clear of the root canvas.
+</summary>
+</member>
+<member name="T:Casanova.Drawing.ModelLayer">
+<summary>
+ A model layer contains a series of drawable models.
+ The model layer also contains a pair of view and projection matrices
+ that specify the camera properties for drawing.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.ShadowedText.Reload">
+<summary>
+ Internal use only: called after deserialization, restore non-serializable attributes.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.ShadowedText.Register">
+<summary>
+ Internal use only: register the sprite into its containing canvas.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.ShadowedText.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,System.String,Casanova.Math.Vector2,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color,Microsoft.Xna.Framework.Color)">
+<summary>
+ A shadowed text is created with the same parameters of a text, plus the offset and color of the shadow.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.ShadowedText.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,System.String,Casanova.Math.Vector2,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color,Microsoft.Xna.Framework.Color)">
+<summary>
+ A shadowed text is created with the same parameters of a text, plus the offset and color of the shadow.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.ShadowedText.Clear">
+<summary>
+ Internal use only: copy all current values into the corresponding next values.
+</summary>
+</member>
+<member name="T:Casanova.Drawing.ShadowedText">
+<summary>
+ Shadowed text is text that is drawn twice: once for a shadow, and once in the foreground.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.WrappingText.Reload">
+<summary>
+ Internal use only: called after deserialization, restore non-serializable attributes.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.WrappingText.Register">
+<summary>
+ Internal use only: register the sprite into its containing canvas.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.WrappingText.Create(Casanova.Drawing.Canvas,System.String,Casanova.Math.Vector2,System.String,Microsoft.Xna.Framework.Color,Casanova.Math.Vector2)">
+<summary>
+ Create a text with its canvas, its font path, its position, its string, its color, and its size.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.WrappingText.Clear">
+<summary>
+ Internal use only: copy all current values into the corresponding next values.
+</summary>
+</member>
+<member name="T:Casanova.Drawing.WrappingText">
+<summary>
+ ...
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.Text.Reload">
+<summary>
+ Internal use only: called after deserialization, restore non-serializable attributes.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Register">
+<summary>
+ Internal use only: register the sprite into its containing canvas.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,System.String,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color)">
+<summary>
+ Create a text with its canvas, its position, its text, its size, and its color. String is &quot;&quot;, and font is arial.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color)">
+<summary>
+ Create a text with its canvas, its position, its size, and its color. String is &quot;&quot;, and font is arial.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Create a text with its canvas, its position, its size and its origin. Color is white, string is &quot;&quot;, and font is arial.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Create a text with its canvas, its position, and its size. Color is white, string is &quot;&quot;, and font is arial.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,System.String,Casanova.Math.Vector2)">
+<summary>
+ Create a text with its canvas, its position, its string, and its size. Color is white and font is arial.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.Canvas,System.String,Casanova.Math.Vector2,System.String,Casanova.Math.Vector2)">
+<summary>
+ Create a text with its canvas, its canvas, its font, its string, its position, its string, its size, and its color.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,System.String,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color)">
+<summary>
+ Create a text with its layer, its position, its text, its size, and its color. String is &quot;&quot;, and font is arial.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color)">
+<summary>
+ Create a text with its layer, its position, its size, and its color. String is &quot;&quot;, and font is arial.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Create a text with its layer, its position, its size and its origin. Color is white, string is &quot;&quot;, and font is arial.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color)">
+<summary>
+ Create a text with its layer, its position, its size, its origin, and its color. The string is &quot;&quot;, and font is arial.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Create a text with its layer, its position, and its size. Color is white, string is &quot;&quot;, and font is arial.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,System.String,Casanova.Math.Vector2)">
+<summary>
+ Create a text with its layer, its position, its string, and its size. Color is white and font is arial.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.SpriteLayer,System.String,Casanova.Math.Vector2,System.String,Casanova.Math.Vector2)">
+<summary>
+ Create a text with its layer, its font path, its position, its string, and its size. Color is white.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.SpriteLayer,System.String,Casanova.Math.Vector2,Casanova.Math.Vector2,System.String,Microsoft.Xna.Framework.Color,Casanova.Math.Vector2)">
+<summary>
+ Create a text with its layer, its font path, its position, its origin, its string, its color, and its size.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Create(Casanova.Drawing.Canvas,System.String,Casanova.Math.Vector2,Casanova.Math.Vector2,System.String,Microsoft.Xna.Framework.Color,Casanova.Math.Vector2)">
+<summary>
+ Create a text with its canvas, its font path, its position, its string, its color, and its size.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Text.Clear">
+<summary>
+ Internal use only: copy all current values into the corresponding next values.
+</summary>
+</member>
+<member name="T:Casanova.Drawing.Text">
+<summary>
+ A Text contains a string to be drawn with a certain font, and all its parameters: sprite layer with the content, canvas it is drawn with, 
+ path of its font, its sprite font, string to draw, color, position, size, origin (center of its transforms such as scale and rotation).
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.Line.Reload">
+<summary>
+ Internal use only: called after deserialization, restore non-serializable attributes.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Line.Register">
+<summary>
+ Internal use only: register the sprite into its containing canvas.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Line.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,System.String,Microsoft.Xna.Framework.Color,System.Single)">
+<summary>
+ Initialize a line with its sprite layer, a source and a destination point, 
+ the path of its texture, its color, and its thickness.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Line.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,System.String,Microsoft.Xna.Framework.Color,System.Single)">
+<summary>
+ Initialize a line with its canvas, a source and a destination point, 
+ the path of its texture, its color, and its thickness.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Line.Clear">
+<summary>
+ Internal use only: copy all current values into the corresponding next values.
+</summary>
+</member>
+<member name="T:Casanova.Drawing.Line">
+<summary>
+ A Line contains a texture to be drawn between two points, and all its parameters: sprite layer with the content, canvas it is drawn with, the path of its texture, texture, its color, 
+ its current texture, its source position, its destination, and its thickness.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.Sprite.Reload">
+<summary>
+ Internal use only: called after deserialization, restore non-serializable attributes.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Register">
+<summary>
+ Internal use only: register the sprite into its containing canvas.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Rectangle,System.String)">
+<summary>
+ Initialize a sprite by specifying its canvas, its position, its size, its source rectangle, and its path. 
+ Origin is center of texture, color is white, there is no rotation, and stretching is disabled.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Rectangle,System.String,Microsoft.Xna.Framework.Color)">
+<summary>
+ Initialize a sprite by specifying its canvas, its position, its size, its source rectangle, its path, and its color. 
+ Origin is center of texture, there is no rotation, and stretching is disabled.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,System.String)">
+<summary>
+ Initialize a sprite by specifying its canvas, its position, its size and its path. 
+ Origin is center of texture, there is no rotation, color is white, and stretching is disabled.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,System.String,Microsoft.Xna.Framework.Color)">
+<summary>
+ Initialize a sprite by specifying its canvas, its position, its size, its path, and its color. 
+ Origin is center of texture, there is no rotation, and stretching is disabled.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,System.Single,Casanova.Math.Vector2,System.String,Microsoft.Xna.Framework.Color,System.Boolean)">
+<summary>
+ Initialize a sprite by specifying its canvas, its position, its size, its rotation, 
+ its origin of transformation, its path, its color, and stretching.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,System.Single,Casanova.Math.Vector2,Casanova.Math.Rectangle,System.String,Microsoft.Xna.Framework.Color)">
+<summary>
+ Initialize a sprite by specifying its canvas, its position, its size, its rotation, 
+ its origin of transformation, its path, and its color. Stretching is disabled.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Rectangle,System.String)">
+<summary>
+ Initialize a sprite by specifying its layer, its position, its size and its path. 
+ Origin is center of texture, there is no rotation, color is white, and stretching is disabled.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,System.String)">
+<summary>
+ Initialize a sprite by specifying its layer, its position, its size and its path. 
+ Origin is center of texture, there is no rotation, color is white, and stretching is disabled.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,System.String,Microsoft.Xna.Framework.Color)">
+<summary>
+ Initialize a sprite by specifying its layer, its position, its size, its path, and its color. 
+ Origin is center of texture, there is no rotation, and stretching is disabled.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,System.Single,Casanova.Math.Vector2,System.String,Microsoft.Xna.Framework.Color)">
+<summary>
+ Initialize a sprite by specifying its layer, its position, its size, its rotation, 
+ its origin of transformation, its path, and its color. Stretching is disabled.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,System.Single,Casanova.Math.Vector2,System.String,Microsoft.Xna.Framework.Color,System.Boolean)">
+<summary>
+ Initialize a sprite by specifying its layer, its position, its size, its rotation, 
+ its origin of transformation, its path, its color, and whether or not to stretch it.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,System.Single,Casanova.Math.Vector2,Casanova.Math.Rectangle,System.String,Microsoft.Xna.Framework.Color,System.Boolean)">
+<summary>
+ Initialize a sprite by specifying its canvas, its position, its size, its rotation, 
+ its origin of transformation, its path, its color, and whether or not to stretch it.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite.Clear">
+<summary>
+ Internal use only: copy all current values into the corresponding next values.
+</summary>
+</member>
+<member name="T:Casanova.Drawing.Sprite">
+<summary>
+ A Sprite contains a picture to be drawn and all its parameters: sprite layer with the content, canvas it is drawn with, path of its texture, texture, color, 
+ current texture, origin (center of its transforms such as scale and rotation), position, rotation, size, scale, and whether or
+ not to stretch the texture when scaling it.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.Sprite3D.Reload">
+<summary>
+ Internal use only: called after deserialization, restore non-serializable attributes.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite3D.Register">
+<summary>
+ Internal use only: register the sprite into its containing canvas.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite3D.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector3,Microsoft.Xna.Framework.Quaternion,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color,System.String)">
+<summary>
+ ...
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Sprite3D.Clear">
+<summary>
+ Internal use only: copy all current values into the corresponding next values.
+</summary>
+</member>
+<member name="T:Casanova.Drawing.Sprite3D">
+<summary>
+ ...
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.Canvas.Unproject``1(Casanova.Math.Vector2)">
+<summary>
+ Unproject a vector from screen-space to unnormalized screen-space.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.SetLayout(Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Internal use only: set the real screen size and position having the parent position and size 
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Reload">
+<summary>
+ Internal use only: called after deserialization to restore non-serializable attributes to itself and to registered entities.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Register">
+<summary>
+ Internal use only: register the canvas into its containing canvas.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.IsInside(Casanova.Math.Vector2)">
+<summary>
+ Check if a position vector is inside itself
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.IdenticalRule">
+<summary>
+ Internal use only: copy all current values from the current to the next state of each rule.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.DrawCanvas">
+<summary>
+ Internal use only: draw all sprites, lines, texts and nested canvases scaled according to the canvas size and position so that the center of the canvas is (0,0).
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Default(Casanova.Drawing.SpriteLayer)">
+<summary>
+ Internal use only: create a canvas that would become the layer default canvas. 
+ It has no parent, position in Zero, size (1000., 1000), no scale, origin in (0,0), stretch.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Initialize a canvas by specifying its layer, its position and its size.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Drawing.StretchMode)">
+<summary>
+ Initialize a canvas by specifying its layer, its position, its size, and if it will be stretched.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Drawing.StretchMode)">
+<summary>
+ Initialize a canvas by specifying its layer, its position, its size, its scale and if it will be stretched.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Initialize a canvas by specifying its parent, its position and its size.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Drawing.StretchMode)">
+<summary>
+ Initialize a canvas by specifying its parent, its position, its size, and if it will be stretched.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Drawing.StretchMode)">
+<summary>
+ Initialize a canvas by specifying its parent, its position, its size, its scale and if it will be stretched.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Drawing.StretchMode)">
+<summary>
+ Initialize a canvas by specifying its layer, its position, its size, its scale
+ its origin of transformation and if it will be stretched.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Math.Vector2,Casanova.Drawing.StretchMode)">
+<summary>
+ Initialize a canvas by specifying its parent, its position, its size, its scale
+ its origin of transformation and if it will be stretched.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.Canvas.Clear">
+<summary>
+ Internal use only: clear the RuleTable value&apos;.
+</summary>
+</member>
+<member name="T:Casanova.Drawing.Canvas">
+<summary>
+ A Canvas contains all the 2D drawable elements and the nested canvases associated with it.
+ It has a position, a sizem a scale, an origin and the stretch attribute.
+ All registered elements are draw with relative positioning derived from the canvas attributes.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Casanova.Drawing.SpriteLayer.DefaultCanvas">
+<summary>
+ Internal use only: contains the default canvas of the layer containing all the canvas associated to that layer.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.SpriteLayer.Unproject``1(Casanova.Math.Vector2)">
+<summary>
+ Unproject a vector from screen-space to unnormalized screen-space.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.SpriteLayer.Reload(Microsoft.Xna.Framework.Content.ContentManager,Casanova.Drawing.GraphicsDevice)">
+<summary>
+ Internal use only: called after deserialization to restore non-serializable attributes to itself and to its fields.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.SpriteLayer.Register">
+<summary>
+ Internal use only: register to its own container. Since the SpriteLayer has no containers, registration
+ does nothing.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.SpriteLayer.IdenticalRule">
+<summary>
+ Internal use only: copy all current values from the current to the next state of each rule.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.SpriteLayer.Draw">
+<summary>
+ Internal use only: sets the layout of the root canvas and draws it .
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.SpriteLayer.Create(Casanova.Drawing.GraphicsDevice,Microsoft.Xna.Framework.Content.ContentManager,Microsoft.Xna.Framework.Matrix)">
+<summary>
+ Initialize a sprite layer with a certain graphics device, a certain content, 
+ a specified initial transform, and the default alpha-blending state of non premultiplied blending.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.SpriteLayer.Create(Casanova.Drawing.GraphicsDevice,Microsoft.Xna.Framework.Content.ContentManager)">
+<summary>
+ Initialize a sprite layer with a certain graphics device, a certain content, and the default alpha-blending state of non premultiplied blending.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.SpriteLayer.Create(Casanova.Drawing.GraphicsDevice,Microsoft.Xna.Framework.Content.ContentManager,Casanova.Drawing.BlendState)">
+<summary>
+ Initialize a sprite layer with a certain graphics device, a certain content, and a certain alpha-blending state.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Drawing.SpriteLayer.Create(Casanova.Drawing.GraphicsDevice,Microsoft.Xna.Framework.Content.ContentManager,Casanova.Drawing.BlendState,Microsoft.Xna.Framework.Matrix,Casanova.Drawing.DrawMode)">
+<summary>
+ Initialize a sprite layer with a certain graphics device, a certain content, a certain alpha-blending state,
+ and an initial transform.
+</summary>
+</member>
+<member name="M:Casanova.Drawing.SpriteLayer.Clear">
+<summary>
+ Internal use only: clear the invoke the clear of the root canvas.
+</summary>
+</member>
+<member name="T:Casanova.Drawing.SpriteLayer">
+<summary>
+ A SpriteLayer contains the root canvas that stores all the canvases that are to be drawn together with a certain transform and with a certain alpha-blending state.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Drawing.DrawMode">
+<summary>
+ ...
+</summary>
+</member>
+<member name="F:Casanova.Drawing.StretchMode.UniformToFill">
+<summary>
+The content is resized to fill the destination dimensions while it preserves its native aspect ratio. If the aspect ratio of the destination rectangle differs from the source, the source content is expanded to fit in the destination dimensions.
+</summary>
+</member>
+<member name="F:Casanova.Drawing.StretchMode.Uniform">
+<summary>
+The content is resized to fit in the destination dimensions while it preserves its native aspect ratio.
+</summary>
+</member>
+<member name="F:Casanova.Drawing.StretchMode.Stretch">
+<summary>
+The content is resized to fill the destination dimensions. The aspect ratio is not preserved.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Drawing.StretchMode">
+<summary>
+ Describes how content is resized to fill its allocated space.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Drawing.GraphicsDevice">
+<summary>
+ Wrapper type used to serialize GraphicsDevice. Which mimix the behaviour of the first GraphicsDevice itself.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Drawing.BlendState">
+<summary>
+ Wrapper type used to serialize BlendState. Which mimix the behaviour of the first BlendState itself.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Drawing">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="F:Casanova.Game.Game.current_game">
+<summary>
+ Singleton used to store the current instance of the game
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Game.Game.save(System.String)">
+<summary>
+ save function on the singleton current_game passed to the start_game function.
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.load(System.String)">
+<summary>
+ load function on the singleton current_game passed to the start_game function.
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.exit">
+<summary>
+ exit function on the singleton current_game passed to the start_game function.
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.create_instance``1(Microsoft.FSharp.Core.FSharpFunc{Casanova.Game.StartGameArgs,System.Tuple{``0,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}}}},System.Boolean)">
+<summary>
+ Internal use only: create a geme instance element.
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.Update(Microsoft.Xna.Framework.GameTime)">
+<summary>
+ Update the game world by invoking the generated update function once.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Game.Game.SetStack(Microsoft.FSharp.Core.FSharpFunc{Casanova.Game.StartGameArgs,System.Tuple{System.Object,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}}}})">
+<summary>
+ SetStack function on the singleton current_game passed to the start_game function.
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.SetStack``1(Microsoft.FSharp.Core.FSharpFunc{Casanova.Game.StartGameArgs,System.Tuple{``0,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}}}})">
+<summary>
+ Set the game instance created invoking the start game function as only element in the stack removing others
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.Save(System.String)">
+<summary>
+ Save the game as &quot;name&quot;.sav storing the world, main script, input scripts, other scripts, the default layer and the rule frame counter.
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.PushStack(Microsoft.FSharp.Core.FSharpFunc{Casanova.Game.StartGameArgs,System.Tuple{System.Object,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}}}},System.Boolean)">
+<summary>
+ PushStack function on the singleton current_game passed to the start_game function.
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.PushStack(Microsoft.FSharp.Core.FSharpFunc{Casanova.Game.StartGameArgs,System.Tuple{System.Object,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}}}},System.Boolean)">
+<summary>
+ Pushes to the top of the stack the game instance created invoking the start game function
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.PopStack">
+<summary>
+ PopStack function on the singleton current_game passed to the start_game function.
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.PopStack">
+<summary>
+ Removes the top game instance on the stack
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.Load(System.String)">
+<summary>
+ Load the savegame named &quot;name&quot;.sav loading the world, main script, input scripts, other scripts, the default layer and the rule frame counter
+ and setting them as the current values, and by creating (via cached reflection) the draw and update functions 
+ based on the shape of the &apos;world type.
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.Initialize">
+<summary>
+ Initialize the game by invoking start_game, storing the world, main script and input scripts
+ as the current values, and by creating (via cached reflection) the draw and update functions 
+ based on the shape of the &apos;world type.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Game.Game.Draw(Microsoft.Xna.Framework.GameTime)">
+<summary>
+ Draw the game world by invoking the generated draw function once.
+</summary>
+</member>
+<member name="M:Casanova.Game.Game.Create``1(Microsoft.FSharp.Core.FSharpFunc{Casanova.Game.StartGameArgs,System.Tuple{``0,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}}}},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Single},Microsoft.FSharp.Core.FSharpOption{System.Single})">
+<summary>
+ Create a game from the start_game function and optionally x resolution, y resolution, fullscreen option, ai tick interval and input tick interval.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Game.Game">
+<summary>
+ Create a Casanova game; the start_game function initializes the world, the main script, and the input scripts; resolution_x and resolution_y are the requested 
+ screen resolution, and fullscreen determines whether or not to initialize the game window in fullscreen. Invoke the Run method to launch the game after its
+ construction.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Casanova.Game.StartGameArgs.Save">
+<summary>
+ The coroutine function used to save the game in the file named name.sav.
+</summary>
+</member>
+<member name="P:Casanova.Game.StartGameArgs.Quit">
+<summary>
+ The coroutine function used to quit the game.
+</summary>
+</member>
+<member name="P:Casanova.Game.StartGameArgs.PopStack">
+<summary>
+ The coroutine function used to pop the stack.
+</summary>
+</member>
+<member name="P:Casanova.Game.StartGameArgs.Load">
+<summary>
+ The coroutine function used to load the game from the file named name.sav.
+</summary>
+</member>
+<member name="P:Casanova.Game.StartGameArgs.GraphicsDevice">
+<summary>
+ The graphics device of the game.
+</summary>
+</member>
+<member name="P:Casanova.Game.StartGameArgs.DefaultModelLayer">
+<summary>
+ The default model layer of the game.
+</summary>
+</member>
+<member name="P:Casanova.Game.StartGameArgs.DefaultLayer">
+<summary>
+ The default layer of the game.
+</summary>
+</member>
+<member name="P:Casanova.Game.StartGameArgs.Content">
+<summary>
+ The content manager of the game.
+</summary>
+</member>
+<member name="M:Casanova.Game.StartGameArgs.SetStack``1(Microsoft.FSharp.Core.FSharpFunc{Casanova.Game.StartGameArgs,System.Tuple{``0,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}}}})">
+<summary>
+ The coroutine function used to set the stack with the game builded on start_game.
+</summary>
+</member>
+<member name="M:Casanova.Game.StartGameArgs.Reload(Microsoft.Xna.Framework.Content.ContentManager)">
+<summary>
+ Internal use only :  called after deserialization to restore its non-serializable attributes. 
+</summary>
+</member>
+<member name="M:Casanova.Game.StartGameArgs.PushStack``1(Microsoft.FSharp.Core.FSharpFunc{Casanova.Game.StartGameArgs,System.Tuple{``0,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}}}},System.Boolean)">
+<summary>
+ The coroutine function used to push in the stack the game builded on start_game with exclusive_draw mode.
+</summary>
+</member>
+<member name="M:Casanova.Game.StartGameArgs.Create(Casanova.Drawing.GraphicsDevice,Microsoft.Xna.Framework.Content.ContentManager,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{System.Tuple{Microsoft.FSharp.Core.FSharpFunc{Casanova.Game.StartGameArgs,System.Tuple{System.Object,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}}}},System.Boolean},Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpFunc{Casanova.Game.StartGameArgs,System.Tuple{System.Object,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Casanova.Coroutines.CoroutineStep{Microsoft.FSharp.Core.Unit}}}}},Microsoft.FSharp.Core.Unit},Casanova.Drawing.SpriteLayer,Casanova.Drawing.ModelLayer)">
+<summary>
+ Internal use only : Create a StartGameArgs object from the values of its field.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Game.StartGameArgs">
+<summary>
+ Class used as arg to the start_game function containing the 
+ GraphicDevice, ContentManager, Quit coroutine function, Save coroutine function, Load coroutine function, 
+ PushStack coroutine function, PopStack coroutine function, SetStack coroutine function and DefaultLayer.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Game">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.GenerateUpdateAndDraw">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Input.is_mouse_right_up">
+<summary>
+ Checks if the left mouse button is currently released.
+</summary>
+</member>
+<member name="M:Casanova.Input.is_mouse_right_down">
+<summary>
+ Checks if the left mouse button is currently pressed.
+</summary>
+</member>
+<member name="M:Casanova.Input.is_mouse_left_up">
+<summary>
+ Checks if the left mouse button is currently released.
+</summary>
+</member>
+<member name="M:Casanova.Input.is_mouse_left_down">
+<summary>
+ Checks if the left mouse button is currently pressed.
+</summary>
+</member>
+<member name="M:Casanova.Input.mouse_position">
+<summary>
+ Gets the current mouse position.
+</summary>
+</member>
+<member name="M:Casanova.Input.is_key_up(Microsoft.Xna.Framework.Input.Keys)">
+<summary>
+ Checks if a key (from the Keys enumeration) is currently not pressed.
+</summary>
+</member>
+<member name="M:Casanova.Input.is_key_down(Microsoft.Xna.Framework.Input.Keys)">
+<summary>
+ Checks if a key (from the Keys enumeration) is currently pressed.
+</summary>
+</member>
+<member name="T:Casanova.Input">
+<summary>
+ Provides input helper functions to read keyboard and mouse states.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Math.Vector2.op_UnaryNegation(Casanova.Math.Vector2)">
+<summary>
+ Negate all the components of a vector.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.op_Subtraction``1(Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Subtract two vectors component by component.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.op_Multiply``2(Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Multiply two vectors component by component.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.op_Multiply``2(Casanova.Math.Vector2,System.Single)">
+<summary>
+ Scale a vector by a scalar.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.op_Multiply``2(System.Single,Casanova.Math.Vector2)">
+<summary>
+ Scale a vector by a scalar.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.op_Division``2(Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Divide two vectors component by component.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.op_Division``2(System.Single,Casanova.Math.Vector2)">
+<summary>
+ Scale a vector by the inverse of a scalar.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.op_Division``2(Casanova.Math.Vector2,System.Single)">
+<summary>
+ Scale a vector by the inverse of a scalar.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.op_Addition``1(Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Add two vectors component by component.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector2.Zero">
+<summary>
+ Initialize a 2d-vector where all the components are set to zero.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector2.Y">
+<summary>
+ Get the second component of the vector.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector2.X">
+<summary>
+ Get the first component of the vector.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector2.UnitY">
+<summary>
+ Initialize a 2d-vector to (0,1).
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector2.UnitX">
+<summary>
+ Initialize a 2d-vector to (1,0).
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector2.ToXNA">
+<summary>
+ Get the internal XNA-style vector without units of measure.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector2.One">
+<summary>
+ Initialize a 2d-vector where all the components are set to one.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector2.Normalized">
+<summary>
+ Get a normalized vector.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector2.Length">
+<summary>
+ Get the length of a vector.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Math.Vector2.Normalize(Casanova.Math.Vector2)">
+<summary>
+ Get a normalized vector.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.Lerp(Casanova.Math.Vector2,Casanova.Math.Vector2,System.Single)">
+<summary>
+ Linearly interpolate two vectors
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.Dot(Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Get the dot product between two vectors
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.Distance(Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Get the distance between two vectors.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.Create(System.Int32,System.Int32)">
+<summary>
+ Initialize a 2d-vector where all the components have a specified integer value.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.Create">
+<summary>
+ Initialize a 2d-vector where all the components are set to zero.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.Create``1(Casanova.Math.Vector2)">
+<summary>
+ Initialize a 2d-vector from another one (of any unit).
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.Create``1(System.Single)">
+<summary>
+ Initialize a 2d-vector where all the components have the same value (of any unit).
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.Create``1(System.Single,System.Single)">
+<summary>
+ Initialize a 2d-vector where all the components have a specified value (of any unit).
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.AngleBetween(Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Gets the angle in radians between two vectors
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.#ctor(Microsoft.Xna.Framework.Vector2)">
+<summary>
+ Initialize a 2d-vector where the internal XNA vector has a specified value.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.#ctor(System.Single,System.Single)">
+<summary>
+ Initialize a 2d-vector where all the components have a specified value (of any unit).
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector2.#ctor(System.Single)">
+<summary>
+ Initialize a 2d-vector where all the components have the same value (of any unit).
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Math.Vector3.op_UnaryNegation(Casanova.Math.Vector3)">
+<summary>
+ Negate all the components of a vector.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.op_Subtraction``1(Casanova.Math.Vector3,Casanova.Math.Vector3)">
+<summary>
+ Subtract two vectors component by component.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.op_Multiply``2(Casanova.Math.Vector3,Casanova.Math.Vector3)">
+<summary>
+ Multiply two vectors component by component.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.op_Multiply``2(Casanova.Math.Vector3,System.Single)">
+<summary>
+ Scale a vector by a scalar.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.op_Division``2(Casanova.Math.Vector3,Casanova.Math.Vector3)">
+<summary>
+ Divide two vectors component by component.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.op_Division``2(Casanova.Math.Vector3,System.Single)">
+<summary>
+ Scale a vector by the inverse of a scalar.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.op_Addition``1(Casanova.Math.Vector3,Casanova.Math.Vector3)">
+<summary>
+ Add two vectors component by component.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.Zero">
+<summary>
+ Initialize a 3d-vector with all zeroes.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.Z">
+<summary>
+ Get the third component of the vector.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.Y">
+<summary>
+ Get the second component of the vector.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.X">
+<summary>
+ Get the first component of the vector.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.Up">
+<summary>
+ Initialize a 3d-vector to (0,1,0).
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.UnitZ">
+<summary>
+ Initialize a 3d-vector to (0,0,1).
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.UnitY">
+<summary>
+ Initialize a 3d-vector to (0,1,0).
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.UnitX">
+<summary>
+ Initialize a 3d-vector to (1,0,0).
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.ToXNA">
+<summary>
+ Get the internal XNA-style vector without units of measure.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.Right">
+<summary>
+ Initialize a 3d-vector to (1,0,0).
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.One">
+<summary>
+ Initialize a 3d-vector where all the components are set to one.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.Normalized">
+<summary>
+ Get a normalized vector.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.Length">
+<summary>
+ Get the length of a vector.
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.Left">
+<summary>
+ Initialize a 3d-vector to (-1,0,0).
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.Forward">
+<summary>
+ Initialize a 3d-vector to (0,0,1).
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.Down">
+<summary>
+ Initialize a 3d-vector to (0,-1,0).
+</summary>
+</member>
+<member name="P:Casanova.Math.Vector3.Backward">
+<summary>
+ Initialize a 3d-vector to (0,0,-1).
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Math.Vector3.Normalize(Casanova.Math.Vector3)">
+<summary>
+ Get a normalized vector.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.Distance``1(Casanova.Math.Vector3,Casanova.Math.Vector3)">
+<summary>
+ Get the distance between two vectors.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.Create">
+<summary>
+ Initialize a 3d-vector with all zeroes.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.Create``1(Casanova.Math.Vector2,System.Single)">
+<summary>
+ Initialize a 3d-vector from a 2D one (of any unit) and an additional Z value.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.Create``1(Casanova.Math.Vector3)">
+<summary>
+ Initialize a 3d-vector from another one (of any unit).
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.Create``1(System.Single)">
+<summary>
+ Initialize a 3d-vector where all the components have the same value (of any unit).
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.Create``1(System.Single,System.Single,System.Single)">
+<summary>
+ Initialize a 3d-vector where all the components have a certain value (of any unit).
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.#ctor(Microsoft.Xna.Framework.Vector3)">
+<summary>
+ Initialize a 3d-vector where the internal XNA vector has a specified value.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.#ctor(System.Single,System.Single,System.Single)">
+<summary>
+ Initialize a 3d-vector where all the components have a specified value.
+</summary>
+</member>
+<member name="M:Casanova.Math.Vector3.#ctor(System.Single)">
+<summary>
+ Initialize a 3d-vector where all the components have the same value.
+</summary>
+</member>
+<member name="T:Casanova.Math.Vector3">
+<summary>
+ 3D-vector struct with unit of measure.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Math.MathHelper">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.Math.Vector">
+
+</member>
+<member name="T:Casanova.Math">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.StandardLibrary.Core.Clock">
+<summary>
+ A clock that updates its time with rules
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.StandardLibrary.Core.FPSCounter.Create(Casanova.Drawing.Canvas,Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Create an fps counter with an assumed font of arial and black font.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Core.FPSCounter.Create(Casanova.Drawing.Canvas,System.String,Casanova.Math.Vector2)">
+<summary>
+ Create an fps counter with an assumed size of 5% of the canvas and black font.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Core.FPSCounter.Create(Casanova.Drawing.Canvas,System.String,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color)">
+<summary>
+ Create an fps counter with an assumed size of 5% of the canvas.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Core.FPSCounter.Create(Casanova.Drawing.Canvas,System.String,Casanova.Math.Vector2,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color)">
+<summary>
+ Create an fps counter that will be rendered on a specified canvas, 
+ at a given position, with a certain size and a certain color.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Core.FPSCounter.Create(Casanova.Drawing.SpriteLayer,Casanova.Math.Vector2,Casanova.Math.Vector2)">
+<summary>
+ Create an fps counter with an assumed font of arial and black font.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Core.FPSCounter.Create(Casanova.Drawing.SpriteLayer,System.String,Casanova.Math.Vector2)">
+<summary>
+ Create an fps counter with an assumed size of 5% of the screen and black font.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Core.FPSCounter.Create(Casanova.Drawing.SpriteLayer,System.String,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color)">
+<summary>
+ Create an fps counter with an assumed size of 5% of the screen.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Core.FPSCounter.Create(Casanova.Drawing.SpriteLayer,System.String,Casanova.Math.Vector2,Casanova.Math.Vector2,Microsoft.Xna.Framework.Color)">
+<summary>
+ Create an fps counter that will be rendered on a specified layer, 
+ at a given position, with a certain size and a certain color.
+</summary>
+</member>
+<member name="T:Casanova.StandardLibrary.Core.FPSCounter">
+<summary>
+ Compute and draw the smoothed framerate of the game
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.StandardLibrary.Core.Timer">
+<summary>
+ Accumulate the total time since the start of the game
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.StandardLibrary.Core.Camera2DBounds">
+<summary>
+ The 2D camera bounds are the bounds that define the volume beyond which a 
+ 2D camera does not move.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.StandardLibrary.Core.Camera2D">
+<summary>
+ The 2D camera contains a position, a height, a velocity, a climbing velocity,
+ and bounds beyond which it does not go. Set the velocity to start/stop movement,
+ and change the bounds to restrict the camera more or less.
+</summary>
+</member>
+<member name="T:Casanova.StandardLibrary.Core">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Casanova.StandardLibrary.Physics.PhysicsEntity3D.Position">
+<summary>
+ Access the position of the entity.
+</summary>
+</member>
+<member name="P:Casanova.StandardLibrary.Physics.PhysicsEntity3D.Orientation">
+<summary>
+ Access the orientation (rotation) of the entity.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsEntity3D.Tick'(Casanova.StandardLibrary.Physics.PhysicsEntity3D,System.Single)">
+<summary>
+ Internal use only.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsEntity3D.ResetDynamics">
+<summary>
+ Reset velocity and forces.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsEntity3D.ApplyLinearImpulse(Casanova.Math.Vector3)">
+<summary>
+ Apply a linear impulse to the entity.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsEntity3D.ApplyAngularImpulse(Casanova.Math.Vector3)">
+<summary>
+ Apply an angular impulse to the entity.
+</summary>
+</member>
+<member name="T:Casanova.StandardLibrary.Physics.PhysicsEntity3D">
+<summary>
+ A physics entity contains a physical body. It is created from a physics world.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsWorld3D.Tick'(Casanova.StandardLibrary.Physics.PhysicsWorld3D,System.Single)">
+<summary>
+ Internal use only.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsWorld3D.CreateBox(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+<summary>
+ Create a physics entity that represents a box. The box has:
+ - an initial position x,y,z
+ - width, height, length, and mass w, h, l, m
+ - dynamic properties (moves after collisions)
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsWorld3D.Create">
+<summary>
+ Initialize a physics world with standard gravity.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsWorld3D.Create(Casanova.Math.Vector3)">
+<summary>
+ Initialize a physics world with a specified gravity vector.
+</summary>
+</member>
+<member name="T:Casanova.StandardLibrary.Physics.PhysicsWorld3D">
+<summary>
+ The PhysicsWorld contains the physics engine and
+ its rules. It must be stored in the game world,
+ *before* any PhysicsEntity.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Casanova.StandardLibrary.Physics.PhysicsEntity.Position(Casanova.Math.Vector2)">
+<summary>
+ Access the position of the entity.
+</summary>
+</member>
+<member name="P:Casanova.StandardLibrary.Physics.PhysicsEntity.Position">
+<summary>
+ Access the position of the entity.
+</summary>
+</member>
+<member name="P:Casanova.StandardLibrary.Physics.PhysicsEntity.Orientation">
+<summary>
+ Access the orientation (rotation) of the entity.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsEntity.Tick'(Casanova.StandardLibrary.Physics.PhysicsEntity,System.Single)">
+<summary>
+ Internal use only.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsEntity.ResetDynamics">
+<summary>
+ Reset velocity and forces.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsEntity.ApplyTorque(System.Single)">
+<summary>
+ Apply a torque to the center of mass of the entity.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsEntity.ApplyLinearImpulse(Casanova.Math.Vector2)">
+<summary>
+ Apply a linear impulse to the entity.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsEntity.ApplyForce(Casanova.Math.Vector2)">
+<summary>
+ Apply a force to the center of mass of the entity.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsEntity.ApplyAngularImpulse(System.Single)">
+<summary>
+ Apply an angular impulse to the entity.
+</summary>
+</member>
+<member name="T:Casanova.StandardLibrary.Physics.PhysicsEntity">
+<summary>
+ A physics entity contains a physical body. It is created from a physics world.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Casanova.StandardLibrary.Physics.PhysicsWorld.Scale">
+<summary>
+ Scale between game meters and physics units.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsWorld.Tick'(Casanova.StandardLibrary.Physics.PhysicsWorld,System.Single)">
+<summary>
+ Internal use only.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsWorld.CreateBox(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+<summary>
+ Create a physics entity that represents a box. The box has:
+ - an initial position x,y
+ - width, height, and mass w * 2, h * 2, m
+ - bounce restitution between 0 (no bounce) and 1 (full bounce)
+ - friction between 0 (no friction) and 1 (maximum friction)
+ - dynamic properties (moves after collisions)
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsWorld.CreateBall(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+<summary>
+ Create a physics entity that represents a ball. The ball has:
+ - an initial position x,y
+ - radius and mass r, m
+ - bounce restitution between 0 (no bounce) and 1 (full bounce)
+ - friction between 0 (no friction) and 1 (maximum friction)
+ - dynamic properties (moves after collisions)
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsWorld.Create">
+<summary>
+ Initialize a physics world with standard gravity.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsWorld.Create(Casanova.Math.Vector2)">
+<summary>
+ Initialize a physics world with a specified gravity vector.
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicsWorld.AddFixedPrismaticJoint(Casanova.StandardLibrary.Physics.PhysicsEntity,Casanova.Math.Vector2)">
+<summary>
+ Adding a prismatic joint to a PhysicsEntity forces it to move only along a given axis.
+</summary>
+</member>
+<member name="T:Casanova.StandardLibrary.Physics.PhysicsWorld">
+<summary>
+ The PhysicsWorld contains the physics engine and
+ its rules. It must be stored in the game world,
+ *before* any PhysicsEntity.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.StandardLibrary.Physics.PhysicalEntity.Create(Casanova.Math.Vector2,System.Single)">
+<summary>
+ Create a physical entity with an initial position and capable of a certain
+ maximum velocity.
+</summary>
+</member>
+<member name="T:Casanova.StandardLibrary.Physics.PhysicalEntity">
+<summary>
+ A physical entity contains a position, a target to reach, a current velocity,
+ and its maximum movement speed. It accelerates to its maximum speed and then
+ stops when it reaches its target.
+</summary>
+</member>
+<member name="T:Casanova.StandardLibrary.Physics">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Casanova.StandardLibrary.UI.Controls.Button">
+<summary>
+ UI button.
+</summary>
+</member>
+<member name="T:Casanova.StandardLibrary.UI.Controls">
+<summary>
+ Contains some ui elements such buttons, listbox, border frame
+</summary>
+</member>
+<member name="M:Casanova.StandardLibrary.UI.Theme.compose_color(Microsoft.Xna.Framework.Color,Microsoft.Xna.Framework.Color)">
+<summary>
+Computes the composition of two color in non premultiplied alpha blending
+</summary>
+</member>
+<member name="P:Casanova.StandardLibrary.UI.Theme.ElementBackground">
+<summary>
+ Color used as background of the ui elements.
+</summary>
+</member>
+<member name="P:Casanova.StandardLibrary.UI.Theme.ListBoxSelected">
+<summary>
+ Color used when the element of a list box is selected.
+</summary>
+</member>
+<member name="P:Casanova.StandardLibrary.UI.Theme.PointerOver">
+<summary>
+ Color used when the pointer is over an element.
+</summary>
+</member>
+<member name="P:Casanova.StandardLibrary.UI.Theme.Transparent">
+<summary>
+ Transparent color
+</summary>
+</member>
+<member name="P:Casanova.StandardLibrary.UI.Theme.White">
+<summary>
+ White color
+</summary>
+</member>
+<member name="P:Casanova.StandardLibrary.UI.Theme.Black">
+<summary>
+ Black color
+</summary>
+</member>
+<member name="T:Casanova.StandardLibrary.UI.Theme">
+<summary>
+Contains the default Metro Dark theme UI color
+</summary>
+</member>
+<member name="T:Casanova.StandardLibrary.UI">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Casanova.Utilities.time_speed">
+<summary>
+ Sets a speedup factor for the game dt
+</summary>
+</member>
+<member name="M:Casanova.Utilities.encapsulate_return``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},``0)">
+<summary>
+ Performs an operation on a value, and then returns the original value.
+ Useful to perform operations such as printing the return value and then returning it: 
+ x |&gt; encapsulate_return print
+</summary>
+</member>
+<member name="M:Casanova.Utilities.launch_debugger">
+<summary>
+ Launch the debugger, but only if it is not running already.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.entropy(Microsoft.FSharp.Collections.FSharpList{System.Double})">
+<summary>
+ Compute the entropy in a list of numbers; assumes the list to add to 1.0.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.gauss(System.Single,System.Single,System.Single)">
+<summary>
+ Compute the probability of a value in a Gaussian of a certain average and variance.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.sqr``2(``0)">
+<summary>
+ Compute the square of a number.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.List`1.Normalize.Static``3(Microsoft.FSharp.Collections.FSharpList{``1})">
+<summary>
+ Normalize a list of positive values
+</summary>
+</member>
+<member name="M:Casanova.Utilities.List`1.NormalizeBy.Static``4(Microsoft.FSharp.Core.FSharpFunc{``0,System.Tuple{``1,``3}},Microsoft.FSharp.Core.FSharpFunc{``2,Microsoft.FSharp.Core.FSharpFunc{``3,``0}},Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Normalize a list of arbitrary elements; needs a &quot;decompose&quot; 
+ function to extract the (positive) value to normalize by, and a
+ &quot;rebuild&quot; function to return the normalized value
+</summary>
+</member>
+<member name="M:Casanova.Utilities.List`1.Randomize.Static``1(Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Randomly change the order of the elements of a list
+</summary>
+</member>
+<member name="M:Casanova.Utilities.List`1.for_i.Static``1(System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Create an iterator where each element of the list is paired with its index.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.List`1.get_Last``1(Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Get the last element of a list.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.List`1.WeightedRandomElement.Static``1(Microsoft.FSharp.Collections.FSharpList{System.Tuple{``0,System.Single}})">
+<summary>
+ Get a random element &apos;a; the probability of getting an element is the floating point value of the pair.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.List`1.RandomElement.Static``1(Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Get a random element of the list.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.List`1.TryRandomElement.Static``1(Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Get a random element; if the list is empty, return None.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.tryMinBy``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},System.Collections.Generic.IEnumerable{``0})">
+<summary>
+ Find the minimum element in a sequence; if the sequence is empty, then return None
+</summary>
+</member>
+<member name="M:Casanova.Utilities.smoothstep``1(System.Single,System.Single,System.Single)">
+<summary>
+ Computes the smooth interpolation between two numbers
+</summary>
+</member>
+<member name="M:Casanova.Utilities.sigmoid(System.Double)">
+<summary>
+ Computes the sigmoid (logistic curve) of a 64-bit floating point number.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.sin``1(System.Single)">
+<summary>
+ Computes the sine of a floating point number with unit of measure.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.cos``1(System.Single)">
+<summary>
+ Computes the cosine of a floating point number with unit of measure.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.with_measure``1">
+<summary>
+ Adds units of measure to a floating point number.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.to_meters_per_second(System.Single)">
+<summary>
+ Convert kilometers per hour to meters per second.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.random_interval(System.Int32,System.Int32)">
+<summary>
+ Generates a random integer between two values.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.random_range``1(System.Single,System.Single)">
+<summary>
+ Generates a random floating-point 32-bit number between two values with unit of measure.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.lerp64``1(System.Double,System.Double,System.Double)">
+<summary>
+ Performs a linear interpolation between two 64-bit floating-point values with unit of measure.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.lerp``1(System.Single,System.Single,System.Single)">
+<summary>
+ Performs a linear interpolation between two 32-bit floating-point values with unit of measure.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.random_int">
+<summary>
+ Generates a random integer.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.random_float">
+<summary>
+ Generates a random floating-point 32-bit number between 0 and 1.
+</summary>
+</member>
+<member name="M:Casanova.Utilities.random_double">
+<summary>
+ Generates a random floating-point 64-bit number between 0 and 1.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Casanova.Utilities.Random.get_NextFloat(System.Random)">
+<summary>
+ Generates a random floating-point 32-bit number between 0 and 1.
+</summary>
+</member>
+<member name="T:Casanova.Utilities">
+
+</member>
+</members>
+</doc>
