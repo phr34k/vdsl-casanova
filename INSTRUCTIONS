@@ -1,0 +1,43 @@
+Inside the folder Samples the visual studio 2012 solution CasanovaSamples.sln can be 
+found. Our modifications to the built pipeline may be incompatible with previous or future 
+version of visual studio, upgrade or downgrade at own risk. Please be aware that you 
+need to have visual studio with both C# and F# support, Visual Studio 2012 Professional 
+is recommended. Mono and MonoDevelop is not officially supported by us at this time.
+
+When the solution is opened the projects are divided into several categories: Casanova 
+Launcher, used for launching the casanova starter kit samples; Casanova Samples, the 
+origional starter kit examples; Flow Designer, compiler and workbench projects; Flow 
+samples, the flow examples.  To run a flow example, please set the 'launcher' (Flow 
+launcher) as startup project, and in the 'bouncingball'  project (Flow Samples) find the 
+*.flow file you wish to run and set the build action to [FlowData], ensure the build action is 
+[none] the remaining files.
+
+For convience the prebuilt folder contains the precompiled flow sample. You can view these
+by starting the launcher executable in each respective folder. 
+
+	Sample Bouncing Ball:
+
+	This is an example where origionally a single ball bounces on floor. In the flow 
+	example a small deriviate was made by instantating two balls.
+
+	Sample Bouncing Balls:
+
+	This is an example where origionally a ball will be instantatiated every few seconds. 
+	The viewer can hold the key A to spawn the balls at an increased rate, each of the 
+	balls will peform physics and bounce aganst eachother.
+
+	Sample Pong:
+
+	This is an example of a pong game. This examples requires two players: the keys 
+	respectively the keys [A, D] and [Arrow Left, Arrow Right] are used to control the paddle 
+	for player 1 and player 2. There are no victory or end-game conditions.
+
+	Rotating Cube:
+	
+	This is an example of a rotating cube. This example uses the [W, A, S, D] keys to
+	influcence rotation of roll and pitch. 
+
+	Snow Particles
+
+	This is an example of a falling snow particles, which are instantiated around the view of 
+	the player using 3d physics. There is no interactivity in this example.

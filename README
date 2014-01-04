@@ -1,8 +1,12 @@
 vdsl-casanova
 =============
 
-A visual language for casanova. Please see https://bitbucket.org/phpfreaked9/casanova.flow temporarily while the migration is in process. 
+Casanova Flow is a (prototype) visual language made for the Casanova framework a 
+language for game development implemented in F#. With the visual language we 
+attempt to generate syntax and semantics from visual structures.
 
+The language is visualized with the assitance of an editor that was made on top of 
+the windows presentation foundation, the visual structures are generic, but with help
+of wpf those can be iterated on in future development.
 
-
-http://www.youtube.com/watch?v=q4Nde3eD3_I
+http://www.youtube.com/watch?v=q4Nde3eD3_I	
